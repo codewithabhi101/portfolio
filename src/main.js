@@ -25,8 +25,8 @@ document.querySelector("#app").innerHTML = `
         <p class="role">Frontend Developer • JavaScript • React</p>
 
         <p class="desc">
-          3rd Year BE (ISE) student focused on Frontend (HTML, CSS, JavaScript, React)
-          and learning Backend (Java, SQL). Currently learning DSA and practicing problem-solving on LeetCode.
+          3rd Year BE (ISE) student focused on Frontend Development (HTML, CSS, JavaScript, React.js).
+          Currently learning Backend Development, MongoDB, and improving DSA through regular practice.
         </p>
 
         <div class="hero-actions">
@@ -47,8 +47,12 @@ document.querySelector("#app").innerHTML = `
       <h2 class="title">About</h2>
       <p class="text">
         I’m ABHI B C, a 3rd-year BE student in Information Science & Engineering.
-        I enjoy building clean, responsive web interfaces using HTML, CSS, JavaScript and React.
-        I’m also learning backend development using Java and SQL through project-based learning.
+        I enjoy building clean, responsive, and modern web interfaces using HTML, CSS, JavaScript, and React.js.
+        I like working on UI and making websites user-friendly.
+        <br /><br />
+        Currently, I’m learning backend development and MongoDB, and strengthening my DSA fundamentals
+        such as arrays, strings, and problem-solving. My goal is to become a full-stack developer
+        and work on real-world projects.
       </p>
     </section>
 
@@ -62,11 +66,11 @@ document.querySelector("#app").innerHTML = `
         </div>
         <div class="card">
           <h3>React Apps</h3>
-          <p>Single-page apps, components, clean structure, and good performance.</p>
+          <p>Single-page apps, reusable components, and clean project structure.</p>
         </div>
         <div class="card">
           <h3>Backend (Learning)</h3>
-          <p>Java + SQL basics for CRUD, DB connectivity and project-based learning.</p>
+          <p>Learning backend concepts, APIs, MongoDB, and server-side logic.</p>
         </div>
       </div>
     </section>
@@ -80,37 +84,37 @@ document.querySelector("#app").innerHTML = `
           <h3 class="subhead">Technical Skills</h3>
 
           <div class="bar" data-p="90">
-            <div class="bar-top">
-              <span>HTML</span><span class="pct">90%</span>
-            </div>
+            <div class="bar-top"><span>HTML</span><span class="pct">90%</span></div>
             <div class="track"><div class="fill"></div></div>
           </div>
 
           <div class="bar" data-p="85">
-            <div class="bar-top">
-              <span>CSS</span><span class="pct">85%</span>
-            </div>
+            <div class="bar-top"><span>CSS</span><span class="pct">85%</span></div>
             <div class="track"><div class="fill"></div></div>
           </div>
 
           <div class="bar" data-p="80">
-            <div class="bar-top">
-              <span>JavaScript</span><span class="pct">80%</span>
-            </div>
+            <div class="bar-top"><span>JavaScript</span><span class="pct">80%</span></div>
             <div class="track"><div class="fill"></div></div>
           </div>
 
-          <div class="bar" data-p="70">
-            <div class="bar-top">
-              <span>React</span><span class="pct">70%</span>
-            </div>
+          <div class="bar" data-p="75">
+            <div class="bar-top"><span>React.js</span><span class="pct">75%</span></div>
             <div class="track"><div class="fill"></div></div>
           </div>
 
-          <div class="bar" data-p="65">
-            <div class="bar-top">
-              <span>Java + SQL</span><span class="pct">65%</span>
-            </div>
+          <div class="bar" data-p="60">
+            <div class="bar-top"><span>MongoDB</span><span class="pct">60%</span></div>
+            <div class="track"><div class="fill"></div></div>
+          </div>
+
+          <div class="bar" data-p="40">
+            <div class="bar-top"><span>Java (Beginner)</span><span class="pct">40%</span></div>
+            <div class="track"><div class="fill"></div></div>
+          </div>
+
+          <div class="bar" data-p="35">
+            <div class="bar-top"><span>DSA (Beginner)</span><span class="pct">35%</span></div>
             <div class="track"><div class="fill"></div></div>
           </div>
         </div>
@@ -119,32 +123,17 @@ document.querySelector("#app").innerHTML = `
           <h3 class="subhead">Professional Skills</h3>
 
           <div class="circles">
+            <div class="circle" style="--p:80">
+              <div class="circle-in"><div class="num">80%</div><div class="lab">Problem Solving</div></div>
+            </div>
             <div class="circle" style="--p:85">
-              <div class="circle-in">
-                <div class="num">85%</div>
-                <div class="lab">Creativity</div>
-              </div>
+              <div class="circle-in"><div class="num">85%</div><div class="lab">Consistency</div></div>
             </div>
-
+            <div class="circle" style="--p:78">
+              <div class="circle-in"><div class="num">78%</div><div class="lab">Learning Mindset</div></div>
+            </div>
             <div class="circle" style="--p:80">
-              <div class="circle-in">
-                <div class="num">80%</div>
-                <div class="lab">Communication</div>
-              </div>
-            </div>
-
-            <div class="circle" style="--p:75">
-              <div class="circle-in">
-                <div class="num">75%</div>
-                <div class="lab">Problem Solving</div>
-              </div>
-            </div>
-
-            <div class="circle" style="--p:80">
-              <div class="circle-in">
-                <div class="num">80%</div>
-                <div class="lab">Teamwork</div>
-              </div>
+              <div class="circle-in"><div class="num">80%</div><div class="lab">Communication</div></div>
             </div>
           </div>
         </div>
@@ -163,26 +152,26 @@ document.querySelector("#app").innerHTML = `
           <div class="stack">HTML • CSS • JavaScript</div>
           <div class="p-links">
             <a class="plink ghost" href="#">Live</a>
-            <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank">GitHub</a>
           </div>
         </article>
 
         <article class="p-card">
           <h3>Portfolio Website</h3>
-          <p>Neon themed portfolio built with Vite + Vanilla JS.</p>
+          <p>Neon themed portfolio built with Vite + Vanilla JavaScript.</p>
           <div class="stack">Vite • HTML • CSS • JavaScript</div>
           <div class="p-links">
             <a class="plink ghost" href="#">Live</a>
-            <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank">GitHub</a>
           </div>
         </article>
 
         <article class="p-card">
-          <h3>Java + SQL CRUD App</h3>
-          <p>Learning project for CRUD operations and database connectivity.</p>
-          <div class="stack">Java • SQL</div>
+          <h3>Backend & DSA Learning Project</h3>
+          <p>Beginner-level learning project focused on backend concepts and DSA practice.</p>
+          <div class="stack">Java • DSA • MongoDB • Backend</div>
           <div class="p-links">
-            <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank">GitHub</a>
           </div>
         </article>
       </div>
@@ -192,10 +181,7 @@ document.querySelector("#app").innerHTML = `
     <section id="contact" class="section block contact">
       <div class="contact-left">
         <h2 class="title left">Contact Me</h2>
-        <p class="text left">
-          Let’s work together. Reach out for opportunities or collaboration.
-        </p>
-
+        <p class="text left">Let’s work together. Reach out for opportunities or collaboration.</p>
         <div class="contact-info">
           <div>📧 linkedin.com/in/abhibc2005/</div>
           <div>💻 github.com/codewithabhi101</div>
@@ -205,7 +191,6 @@ document.querySelector("#app").innerHTML = `
       <form class="contact-form" id="contactForm">
         <input type="text" placeholder="Enter Your Name" required />
         <input type="email" placeholder="Enter Your Email" required />
-        <input type="text" placeholder="Enter Your Subject" />
         <textarea rows="5" placeholder="Enter Your Message" required></textarea>
         <button class="btn neon full" type="submit">Submit</button>
       </form>
@@ -217,44 +202,16 @@ document.querySelector("#app").innerHTML = `
   </main>
 `;
 
-/* ---- JS: Skill bar animation + active nav ---- */
+/* JS */
 const bars = document.querySelectorAll(".bar");
 const navLinks = document.querySelectorAll(".navlink");
 
-const setActiveLink = () => {
-  const sections = ["home","about","services","skills","projects","contact"]
-    .map(id => document.getElementById(id))
-    .filter(Boolean);
-
-  let current = "home";
-  for (const sec of sections) {
-    const rect = sec.getBoundingClientRect();
-    if (rect.top <= 140) current = sec.id;
-  }
-
-  navLinks.forEach(a => a.classList.toggle("active", a.getAttribute("href") === `#${current}`));
-};
-
-window.addEventListener("scroll", setActiveLink);
-setActiveLink();
-
 const io = new IntersectionObserver((entries) => {
-  for (const e of entries) {
-    if (e.isIntersecting) {
-      bars.forEach(b => {
-        const p = b.getAttribute("data-p");
-        b.querySelector(".fill").style.width = p + "%";
-      });
-      io.disconnect();
-    }
+  if (entries[0].isIntersecting) {
+    bars.forEach(b => b.querySelector(".fill").style.width = b.dataset.p + "%");
+    io.disconnect();
   }
-}, { threshold: 0.25 });
+}, { threshold: 0.3 });
 
 const skillsSec = document.getElementById("skills");
 if (skillsSec) io.observe(skillsSec);
-
-document.getElementById("contactForm")?.addEventListener("submit", (e) => {
-  e.preventDefault();
-  alert("Message saved (demo). To send real email we can connect EmailJS.");
-  e.target.reset();
-});
