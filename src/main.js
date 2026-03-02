@@ -22,11 +22,12 @@ document.querySelector("#app").innerHTML = `
         <h1 class="name">
           <span class="grad">ABHI B C</span>
         </h1>
-        <p class="role">Frontend Developer • JavaScript • React</p>
+        <p class="role">TypeScript Developer • Next.js • Modern Web Apps</p>
 
         <p class="desc">
-          3rd Year BE (ISE) student focused on Frontend Development (HTML, CSS, JavaScript, React.js).
-          Currently learning Backend Development, MongoDB, and improving DSA through regular practice.
+          3rd Year BE (ISE) student focused on building scalable and modern web applications using
+          TypeScript and Next.js. I enjoy creating clean, responsive, and high-performance user interfaces
+          with a strong focus on user experience.
         </p>
 
         <div class="hero-actions">
@@ -47,12 +48,12 @@ document.querySelector("#app").innerHTML = `
       <h2 class="title">About</h2>
       <p class="text">
         I’m ABHI B C, a 3rd-year BE student in Information Science & Engineering.
-        I enjoy building clean, responsive, and modern web interfaces using HTML, CSS, JavaScript, and React.js.
-        I like working on UI and making websites user-friendly.
+        I focus on building modern, scalable web applications using TypeScript and Next.js.
+        I enjoy crafting clean, responsive UI and improving performance and usability.
         <br /><br />
-        Currently, I’m learning backend development and MongoDB, and strengthening my DSA fundamentals
-        such as arrays, strings, and problem-solving. My goal is to become a full-stack developer
-        and work on real-world projects.
+        Currently, I’m strengthening my TypeScript fundamentals, exploring Next.js App Router concepts
+        (SSR/SSG, routing, API routes), and practicing problem-solving regularly.
+        My goal is to become a full-stack developer and work on real-world, production-ready projects.
       </p>
     </section>
 
@@ -61,16 +62,16 @@ document.querySelector("#app").innerHTML = `
       <h2 class="title">Services</h2>
       <div class="cards3">
         <div class="card">
-          <h3>Frontend UI</h3>
-          <p>Responsive websites using HTML, CSS, JavaScript and modern UI design.</p>
+          <h3>Next.js Applications</h3>
+          <p>Building scalable apps using Next.js routing, SSR/SSG, and API routes.</p>
         </div>
         <div class="card">
-          <h3>React Apps</h3>
-          <p>Single-page apps, reusable components, and clean project structure.</p>
+          <h3>TypeScript Development</h3>
+          <p>Type-safe, maintainable code with strong structure and best practices.</p>
         </div>
         <div class="card">
-          <h3>Backend (Learning)</h3>
-          <p>Learning backend concepts, APIs, MongoDB, and server-side logic.</p>
+          <h3>Modern UI</h3>
+          <p>Responsive UI with reusable components and clean layouts for great UX.</p>
         </div>
       </div>
     </section>
@@ -84,37 +85,42 @@ document.querySelector("#app").innerHTML = `
           <h3 class="subhead">Technical Skills</h3>
 
           <div class="bar" data-p="90">
-            <div class="bar-top"><span>HTML</span><span class="pct">90%</span></div>
+            <div class="bar-top"><span>TypeScript</span><span class="pct">90%</span></div>
             <div class="track"><div class="fill"></div></div>
           </div>
 
           <div class="bar" data-p="85">
-            <div class="bar-top"><span>CSS</span><span class="pct">85%</span></div>
+            <div class="bar-top"><span>Next.js</span><span class="pct">85%</span></div>
             <div class="track"><div class="fill"></div></div>
           </div>
 
-          <div class="bar" data-p="80">
-            <div class="bar-top"><span>JavaScript</span><span class="pct">80%</span></div>
+          <div class="bar" data-p="82">
+            <div class="bar-top"><span>React</span><span class="pct">82%</span></div>
             <div class="track"><div class="fill"></div></div>
           </div>
 
           <div class="bar" data-p="75">
-            <div class="bar-top"><span>React.js</span><span class="pct">75%</span></div>
+            <div class="bar-top"><span>JavaScript</span><span class="pct">75%</span></div>
+            <div class="track"><div class="fill"></div></div>
+          </div>
+
+          <div class="bar" data-p="78">
+            <div class="bar-top"><span>HTML & CSS</span><span class="pct">78%</span></div>
+            <div class="track"><div class="fill"></div></div>
+          </div>
+
+          <div class="bar" data-p="72">
+            <div class="bar-top"><span>REST API</span><span class="pct">72%</span></div>
+            <div class="track"><div class="fill"></div></div>
+          </div>
+
+          <div class="bar" data-p="65">
+            <div class="bar-top"><span>MongoDB (Basics)</span><span class="pct">65%</span></div>
             <div class="track"><div class="fill"></div></div>
           </div>
 
           <div class="bar" data-p="60">
-            <div class="bar-top"><span>MongoDB</span><span class="pct">60%</span></div>
-            <div class="track"><div class="fill"></div></div>
-          </div>
-
-          <div class="bar" data-p="40">
-            <div class="bar-top"><span>Java (Beginner)</span><span class="pct">40%</span></div>
-            <div class="track"><div class="fill"></div></div>
-          </div>
-
-          <div class="bar" data-p="35">
-            <div class="bar-top"><span>DSA (Beginner)</span><span class="pct">35%</span></div>
+            <div class="bar-top"><span>DSA (Improving)</span><span class="pct">60%</span></div>
             <div class="track"><div class="fill"></div></div>
           </div>
         </div>
@@ -123,59 +129,80 @@ document.querySelector("#app").innerHTML = `
           <h3 class="subhead">Professional Skills</h3>
 
           <div class="circles">
-            <div class="circle" style="--p:80">
-              <div class="circle-in"><div class="num">80%</div><div class="lab">Problem Solving</div></div>
+            <div class="circle" style="--p:82">
+              <div class="circle-in"><div class="num">82%</div><div class="lab">Problem Solving</div></div>
             </div>
-            <div class="circle" style="--p:85">
-              <div class="circle-in"><div class="num">85%</div><div class="lab">Consistency</div></div>
+            <div class="circle" style="--p:86">
+              <div class="circle-in"><div class="num">86%</div><div class="lab">Consistency</div></div>
+            </div>
+            <div class="circle" style="--p:80">
+              <div class="circle-in"><div class="num">80%</div><div class="lab">Learning Mindset</div></div>
             </div>
             <div class="circle" style="--p:78">
-              <div class="circle-in"><div class="num">78%</div><div class="lab">Learning Mindset</div></div>
-            </div>
-            <div class="circle" style="--p:80">
-              <div class="circle-in"><div class="num">80%</div><div class="lab">Communication</div></div>
+              <div class="circle-in"><div class="num">78%</div><div class="lab">Communication</div></div>
             </div>
           </div>
         </div>
       </div>
     </section>
+ <div class="project-grid">
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section block">
-      <h2 class="title">Projects</h2>
-      <p class="text small-center">A showcase of projects I built while learning frontend and backend development.</p>
+  <!-- 1) Lorenta FIRST -->
+  <article class="p-card">
+    <h3>Lorenta Technologies Website</h3>
+    <p>Business website with clean UI, responsive layout, and modern sections.</p>
+    <div class="stack">Next.js • TypeScript • Responsive • UI</div>
+    <div class="p-links">
+      <a class="plink ghost" href="https://www.lorentatechnologies.com/" target="_blank" rel="noreferrer">Live</a>
+      <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+  </article>
 
-      <div class="project-grid">
-        <article class="p-card">
-          <h3>Smart Employee Dashboard</h3>
-          <p>Add/Delete, search, and LocalStorage persistence for employee records.</p>
-          <div class="stack">HTML • CSS • JavaScript</div>
-          <div class="p-links">
-            <a class="plink ghost" href="#">Live</a>
-            <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank">GitHub</a>
-          </div>
-        </article>
+  <!-- 2) Next.js Portfolio -->
+  <article class="p-card">
+    <h3>Next.js Portfolio</h3>
+    <p>Personal portfolio built with Next.js + TypeScript, responsive UI and optimized pages.</p>
+    <div class="stack">Next.js • TypeScript • UI • Responsive</div>
+    <div class="p-links">
+      <a class="plink ghost" href="#" target="_blank" rel="noreferrer">Live</a>
+      <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+  </article>
 
-        <article class="p-card">
-          <h3>Portfolio Website</h3>
-          <p>Neon themed portfolio built with Vite + Vanilla JavaScript.</p>
-          <div class="stack">Vite • HTML • CSS • JavaScript</div>
-          <div class="p-links">
-            <a class="plink ghost" href="#">Live</a>
-            <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank">GitHub</a>
-          </div>
-        </article>
+  <!-- 3) Task Manager -->
+  <article class="p-card">
+    <h3>Task Manager Dashboard</h3>
+    <p>Task CRUD dashboard with search/filter and clean component structure.</p>
+    <div class="stack">Next.js • TypeScript • CRUD • API Routes</div>
+    <div class="p-links">
+      <a class="plink ghost" href="#" target="_blank" rel="noreferrer">Live</a>
+      <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+  </article>
 
-        <article class="p-card">
-          <h3>Backend & DSA Learning Project</h3>
-          <p>Beginner-level learning project focused on backend concepts and DSA practice.</p>
-          <div class="stack">Java • DSA • MongoDB • Backend</div>
-          <div class="p-links">
-            <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank">GitHub</a>
-          </div>
-        </article>
-      </div>
-    </section>
+  <!-- 4) Auth + Blog -->
+  <article class="p-card">
+    <h3>Auth + Blog App</h3>
+    <p>Blog app with authentication, protected pages, and dynamic routing.</p>
+    <div class="stack">Next.js • TypeScript • Auth • MongoDB</div>
+    <div class="p-links">
+      <a class="plink ghost" href="#" target="_blank" rel="noreferrer">Live</a>
+      <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+  </article>
+
+  <!-- 5) Agriculture Dept -->
+  <article class="p-card">
+    <h3>College Agriculture Dept Website (Demo)</h3>
+    <p>Demo website for our college Agriculture Department with responsive layout and routing.</p>
+    <div class="stack">Next.js • TypeScript • Responsive UI • Routing</div>
+    <div class="p-links">
+      <a class="plink ghost" href="http://localhost:3000" target="_blank" rel="noreferrer">Live</a>
+      <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+  </article>
+
+</div>
 
     <!-- CONTACT -->
     <section id="contact" class="section block contact">
@@ -206,12 +233,27 @@ document.querySelector("#app").innerHTML = `
 const bars = document.querySelectorAll(".bar");
 const navLinks = document.querySelectorAll(".navlink");
 
-const io = new IntersectionObserver((entries) => {
-  if (entries[0].isIntersecting) {
-    bars.forEach(b => b.querySelector(".fill").style.width = b.dataset.p + "%");
-    io.disconnect();
-  }
-}, { threshold: 0.3 });
+/* Skill bars fill when skills section enters view */
+const io = new IntersectionObserver(
+  (entries) => {
+    if (entries[0].isIntersecting) {
+      bars.forEach((b) => {
+        const fill = b.querySelector(".fill");
+        if (fill) fill.style.width = b.dataset.p + "%";
+      });
+      io.disconnect();
+    }
+  },
+  { threshold: 0.3 }
+);
 
 const skillsSec = document.getElementById("skills");
 if (skillsSec) io.observe(skillsSec);
+
+/* Active nav link on click (simple) */
+navLinks.forEach((a) => {
+  a.addEventListener("click", () => {
+    navLinks.forEach((x) => x.classList.remove("active"));
+    a.classList.add("active");
+  });
+});
