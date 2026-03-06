@@ -9,7 +9,7 @@ document.querySelector("#app").innerHTML = `
       <a class="navlink" href="#about">About</a>
       <a class="navlink" href="#services">Services</a>
       <a class="navlink" href="#skills">Skills</a>
-      <a class="navlink" href="#projects">Project</a>
+      <a class="navlink" href="#projects">Projects</a>
       <a class="navlink" href="#contact">Contact</a>
     </nav>
   </header>
@@ -31,7 +31,7 @@ document.querySelector("#app").innerHTML = `
         </p>
 
         <div class="hero-actions">
-          <a class="btn neon" href="/ABHI_BC_Resume.pdf" download>Download CV</a>
+          <a class="btn neon" href="/ABHI_RESUME_2026.pdf" download>Download CV</a>
           <a class="btn ghost" href="#projects">View Projects</a>
         </div>
       </div>
@@ -145,64 +145,55 @@ document.querySelector("#app").innerHTML = `
         </div>
       </div>
     </section>
- <div class="project-grid">
 
-  <!-- 1) Lorenta FIRST -->
-  <article class="p-card">
-    <h3>Lorenta Technologies Website</h3>
-    <p>Business website with clean UI, responsive layout, and modern sections.</p>
-    <div class="stack">Next.js • TypeScript • Responsive • UI</div>
-    <div class="p-links">
-      <a class="plink ghost" href="https://www.lorentatechnologies.com/" target="_blank" rel="noreferrer">Live</a>
-      <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
-    </div>
-  </article>
+    <!-- PROJECTS -->
+    <section id="projects" class="section block">
+      <h2 class="title">Projects</h2>
 
-  <!-- 2) Next.js Portfolio -->
-  <article class="p-card">
-    <h3>Next.js Portfolio</h3>
-    <p>Personal portfolio built with Next.js + TypeScript, responsive UI and optimized pages.</p>
-    <div class="stack">Next.js • TypeScript • UI • Responsive</div>
-    <div class="p-links">
-      <a class="plink ghost" href="#" target="_blank" rel="noreferrer">Live</a>
-      <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
-    </div>
-  </article>
+      <div class="project-grid">
 
-  <!-- 3) Task Manager -->
-  <article class="p-card">
-    <h3>Task Manager Dashboard</h3>
-    <p>Task CRUD dashboard with search/filter and clean component structure.</p>
-    <div class="stack">Next.js • TypeScript • CRUD • API Routes</div>
-    <div class="p-links">
-      <a class="plink ghost" href="#" target="_blank" rel="noreferrer">Live</a>
-      <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
-    </div>
-  </article>
+        <article class="p-card">
+          <h3>Lorenta Technologies Website</h3>
+          <p>Business website with clean UI, responsive layout, and modern sections.</p>
+          <div class="stack">Next.js • TypeScript • Responsive • UI</div>
+          <div class="p-links">
+            <a class="plink ghost" href="https://www.lorentatechnologies.com/" target="_blank" rel="noreferrer">Live</a>
+            <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </article>
 
-  <!-- 4) Auth + Blog -->
-  <article class="p-card">
-    <h3>Auth + Blog App</h3>
-    <p>Blog app with authentication, protected pages, and dynamic routing.</p>
-    <div class="stack">Next.js • TypeScript • Auth • MongoDB</div>
-    <div class="p-links">
-      <a class="plink ghost" href="#" target="_blank" rel="noreferrer">Live</a>
-      <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
-    </div>
-  </article>
+        <article class="p-card">
+          <h3>Next.js Portfolio</h3>
+          <p>Personal portfolio built with Next.js and TypeScript, featuring a responsive UI and smooth modern layout.</p>
+          <div class="stack">Next.js • TypeScript • UI • Responsive</div>
+          <div class="p-links">
+            <a class="plink ghost" href="#home">Live</a>
+            <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </article>
 
-  <!-- 5) Agriculture Dept -->
-  <article class="p-card">
-    <h3>College Agriculture Dept Website (Demo)</h3>
-    <p>Demo website for our college Agriculture Department with responsive layout and routing.</p>
-    <div class="stack">Next.js • TypeScript • Responsive UI • Routing</div>
-    <div class="p-links">
-      <a class="plink ghost" href="http://localhost:3000" target="_blank" rel="noreferrer">Live</a>
-      <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
-    </div>
-  </article>
+        <article class="p-card">
+          <h3>Task Manager Dashboard</h3>
+          <p>Task management dashboard with CRUD features, search/filter functionality, and reusable components.</p>
+          <div class="stack">Next.js • TypeScript • CRUD • API Routes</div>
+          <div class="p-links">
+          <a class="plink ghost" href="https://task-manager-dashboard123.netlify.app/" target="_blank" rel="noreferrer">Live</a>
+            <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </article>
 
-</div>
+        <article class="p-card">
+          <h3>College Agriculture Dept Website (Demo)</h3>
+          <p>Demo website for a college Agriculture Department with responsive sections and structured navigation.</p>
+          <div class="stack">Next.js • TypeScript • Responsive UI • Routing</div>
+          <div class="p-links">
+             <a class="plink ghost" href="https://agrdemo1.netlify.app/" target="_blank" rel="noreferrer">Live</a>
+            <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
 
     <!-- CONTACT -->
     <section id="contact" class="section block contact">
@@ -250,7 +241,7 @@ const io = new IntersectionObserver(
 const skillsSec = document.getElementById("skills");
 if (skillsSec) io.observe(skillsSec);
 
-/* Active nav link on click (simple) */
+/* Active nav link on click */
 navLinks.forEach((a) => {
   a.addEventListener("click", () => {
     navLinks.forEach((x) => x.classList.remove("active"));
