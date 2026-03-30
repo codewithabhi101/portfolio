@@ -31,7 +31,7 @@ document.querySelector("#app").innerHTML = `
         </p>
 
         <div class="hero-actions">
-          <a class="btn neon" href="/ABHI_RESUME_2026.pdf" download>Download CV</a>
+          <a class="btn neon" href="/ABHI_RESUME.pdf" download>Download CV</a>
           <a class="btn ghost" href="#projects">View Projects</a>
         </div>
       </div>
