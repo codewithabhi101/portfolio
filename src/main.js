@@ -25,7 +25,7 @@ document.querySelector("#app").innerHTML = `
         <p class="role">TypeScript Developer • Next.js • Modern Web Apps</p>
 
         <p class="desc">
-          3rd Year BE (ISE) student focused on building scalable and modern web applications using
+          4th Year BE (ISE) student focused on building scalable and modern web applications using
           TypeScript and Next.js. I enjoy creating clean, responsive, and high-performance user interfaces
           with a strong focus on user experience.
         </p>
@@ -47,7 +47,7 @@ document.querySelector("#app").innerHTML = `
     <section id="about" class="section block">
       <h2 class="title">About</h2>
       <p class="text">
-        I’m ABHI B C, a 3rd-year BE student in Information Science & Engineering.
+        I’m ABHI B C, a 4th-year BE student in Information Science & Engineering.
         I focus on building modern, scalable web applications using TypeScript and Next.js.
         I enjoy crafting clean, responsive UI and improving performance and usability.
         <br /><br />
