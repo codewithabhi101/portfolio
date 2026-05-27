@@ -199,21 +199,21 @@ document.querySelector("#app").innerHTML = `
       </div>
     </section>
 
-    <!-- CONTACT -->
+   <!-- CONTACT -->
     <section id="contact" class="section block contact">
       <div class="contact-left">
         <h2 class="title left">Contact Me</h2>
-        <p class="text left">Let’s work together. Reach out for opportunities or collaboration.</p>
+        <p class="text left">Let's work together. Reach out for opportunities or collaboration.</p>
         <div class="contact-info">
           <div>📧 linkedin.com/in/abhibc2005/</div>
           <div>💻 github.com/codewithabhi101</div>
         </div>
       </div>
 
-      <form class="contact-form" id="contactForm">
-        <input type="text" placeholder="Enter Your Name" required />
-        <input type="email" placeholder="Enter Your Email" required />
-        <textarea rows="5" placeholder="Enter Your Message" required></textarea>
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/mnjrlzjl" method="POST">
+        <input type="text" name="name" placeholder="Enter Your Name" required />
+        <input type="email" name="email" placeholder="Enter Your Email" required />
+        <textarea name="message" rows="5" placeholder="Enter Your Message" required></textarea>
         <button class="btn neon full" type="submit">Submit</button>
       </form>
     </section>
@@ -222,7 +222,6 @@ document.querySelector("#app").innerHTML = `
       <p>© 2026 ABHI B C • Built with Vite</p>
     </footer>
   </main>
-`;
 
 /* JS */
 const bars = document.querySelectorAll(".bar");
