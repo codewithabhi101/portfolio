@@ -22,12 +22,11 @@ document.querySelector("#app").innerHTML = `
         <h1 class="name">
           <span class="grad">ABHI B C</span>
         </h1>
-        <p class="role">TypeScript Developer • Next.js • Modern Web Apps</p>
+        <p class="role">Frontend Developer • Next.js • TypeScript • Open to Internships</p>
 
         <p class="desc">
-          4th Year BE (ISE) student focused on building scalable and modern web applications using
-          TypeScript and Next.js. I enjoy creating clean, responsive, and high-performance user interfaces
-          with a strong focus on user experience.
+          I build fast, scalable, and responsive web applications using Next.js and 
+          TypeScript — with clean component architecture and real-world deployment experience.
         </p>
 
         <div class="hero-actions">
@@ -47,13 +46,18 @@ document.querySelector("#app").innerHTML = `
     <section id="about" class="section block">
       <h2 class="title">About</h2>
       <p class="text">
-        I’m ABHI B C, a 4th-year BE student in Information Science & Engineering.
-        I focus on building modern, scalable web applications using TypeScript and Next.js.
-        I enjoy crafting clean, responsive UI and improving performance and usability.
+        I'm Abhi, a Frontend Developer specializing in Next.js and TypeScript.
+        I build clean, responsive, and scalable web applications with a strong
+        focus on performance and user experience.
         <br /><br />
-        Currently, I’m strengthening my TypeScript fundamentals, exploring Next.js App Router concepts
-        (SSR/SSG, routing, API routes), and practicing problem-solving regularly.
-        My goal is to become a full-stack developer and work on real-world, production-ready projects.
+        I've independently designed, built, and deployed multiple real-world
+        projects — all live and publicly accessible. I'm currently strengthening
+        my full-stack skills with Next.js App Router (SSR/SSG, API routes) and
+        practicing DSA regularly.
+        <br /><br />
+        Currently seeking a frontend or full-stack internship where I can
+        contribute real code from day one and grow with a team that cares
+        about quality.
       </p>
     </section>
 
