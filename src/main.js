@@ -181,7 +181,7 @@ document.querySelector("#app").innerHTML = `
           <p>Task management dashboard with CRUD features, search/filter functionality, and reusable components.</p>
           <div class="stack">Next.js • TypeScript • CRUD • API Routes</div>
           <div class="p-links">
-          <a class="plink ghost" href="https://task-manager-dashboard123.netlify.app/" target="_blank" rel="noreferrer">Live</a>
+            <a class="plink ghost" href="https://task-manager-dashboard123.netlify.app/" target="_blank" rel="noreferrer">Live</a>
             <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
           </div>
         </article>
@@ -191,7 +191,7 @@ document.querySelector("#app").innerHTML = `
           <p>Demo website for a college Agriculture Department with responsive sections and structured navigation.</p>
           <div class="stack">Next.js • TypeScript • Responsive UI • Routing</div>
           <div class="p-links">
-             <a class="plink ghost" href="https://agrdemo1.netlify.app/" target="_blank" rel="noreferrer">Live</a>
+            <a class="plink ghost" href="https://agrdemo1.netlify.app/" target="_blank" rel="noreferrer">Live</a>
             <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
           </div>
         </article>
@@ -199,7 +199,7 @@ document.querySelector("#app").innerHTML = `
       </div>
     </section>
 
-   <!-- CONTACT -->
+    <!-- CONTACT -->
     <section id="contact" class="section block contact">
       <div class="contact-left">
         <h2 class="title left">Contact Me</h2>
@@ -222,6 +222,7 @@ document.querySelector("#app").innerHTML = `
       <p>© 2026 ABHI B C • Built with Vite</p>
     </footer>
   </main>
+`;
 
 /* JS */
 const bars = document.querySelectorAll(".bar");
