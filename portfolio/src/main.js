@@ -1,7 +1,6 @@
 import "./style.css";
 
 document.querySelector("#app").innerHTML = `
-  <!-- NAV -->
   <header class="nav">
     <div class="brand">abhi<span class="dot">.</span>dev</div>
     <nav class="links" id="navLinks">
@@ -31,9 +30,7 @@ document.querySelector("#app").innerHTML = `
             <div class="pulse"></div>
             Open to Internships &amp; Opportunities
           </div>
-          <h1 class="hero-name">
-            <span class="grad">Abhi B C</span>
-          </h1>
+          <h1 class="hero-name"><span class="grad">Abhi B C</span></h1>
           <p class="hero-role" id="typedRole">Frontend Developer · Next.js · TypeScript · Full-Stack</p>
           <p class="hero-desc">
             Frontend-focused developer with full-stack experience. Built and shipped
@@ -42,14 +39,14 @@ document.querySelector("#app").innerHTML = `
           </p>
           <div class="hero-actions">
             <a class="btn neon" href="/ABHI_RESUME.pdf" download>⬇ Download CV</a>
-            <a class="btn ghost" href="#projects">View Projects →</a>
+            <a class="btn ghost" href="#projects" id="viewProjectsBtn">View Projects →</a>
             <a class="btn ghost" href="#contact">Hire Me</a>
           </div>
         </div>
         <div class="hero-right">
           <div class="avatar-wrap">
             <div class="avatar-glow"></div>
-            <div class="avatar-ring">
+            <div class="avatar-border">
               <img src="/profile.jpg" alt="Abhi B C" />
             </div>
           </div>
@@ -66,38 +63,14 @@ document.querySelector("#app").innerHTML = `
         </div>
         <div class="about-grid">
           <div class="about-text reveal-left">
-            <p>
-              I'm Abhi, a Frontend Developer specializing in <strong>Next.js</strong> and
-              <strong>TypeScript</strong>, currently in my final year of Information Science
-              Engineering at AIET, Moodbidri (CGPA: 7.5).
-            </p>
-            <p>
-              I've independently designed, built, and deployed multiple real-world projects —
-              all live and publicly accessible. My flagship project <strong>SubTracker</strong>
-              is a full-stack SaaS with JWT auth, AI-powered insights, and live Vercel deployment.
-            </p>
-            <p>
-              Actively strengthening full-stack skills with Next.js App Router (SSR/SSG, API routes)
-              and practicing DSA regularly. Seeking a frontend or full-stack internship to contribute
-              real code from day one.
-            </p>
+            <p>I'm Abhi, a Frontend Developer specializing in <strong>Next.js</strong> and <strong>TypeScript</strong>, currently in my final year of Information Science Engineering at AIET, Moodbidri (CGPA: 7.5).</p>
+            <p>I've independently designed, built, and deployed multiple real-world projects — all live and publicly accessible. My flagship project <strong>SubTracker</strong> is a full-stack SaaS with JWT auth, AI-powered insights, and live Vercel deployment.</p>
+            <p>Actively strengthening full-stack skills with Next.js App Router (SSR/SSG, API routes) and practicing DSA regularly. Seeking a frontend or full-stack internship to contribute real code from day one.</p>
             <div class="about-stats stagger">
-              <div class="stat-box">
-                <div class="stat-num">4+</div>
-                <div class="stat-label">Projects Shipped</div>
-              </div>
-              <div class="stat-box">
-                <div class="stat-num">2</div>
-                <div class="stat-label">Certifications</div>
-              </div>
-              <div class="stat-box">
-                <div class="stat-num">7.5</div>
-                <div class="stat-label">CGPA</div>
-              </div>
-              <div class="stat-box">
-                <div class="stat-num">100%</div>
-                <div class="stat-label">Self-Taught</div>
-              </div>
+              <div class="stat-box"><div class="stat-num">4+</div><div class="stat-label">Projects Shipped</div></div>
+              <div class="stat-box"><div class="stat-num">2</div><div class="stat-label">Certifications</div></div>
+              <div class="stat-box"><div class="stat-num">7.5</div><div class="stat-label">CGPA</div></div>
+              <div class="stat-box"><div class="stat-num">100%</div><div class="stat-label">Self-Taught</div></div>
             </div>
           </div>
           <div class="reveal-right">
@@ -137,45 +110,16 @@ document.querySelector("#app").innerHTML = `
         <div class="skills-layout">
           <div class="reveal-left">
             <div class="sec-tag" style="margin-top:28px;">Technical Skills</div>
-
-            <div class="bar" data-p="90">
-              <div class="bar-top"><span>TypeScript</span><span class="pct">90%</span></div>
-              <div class="track"><div class="fill"></div></div>
-            </div>
-            <div class="bar" data-p="88">
-              <div class="bar-top"><span>Next.js</span><span class="pct">88%</span></div>
-              <div class="track"><div class="fill"></div></div>
-            </div>
-            <div class="bar" data-p="85">
-              <div class="bar-top"><span>React.js</span><span class="pct">85%</span></div>
-              <div class="track"><div class="fill"></div></div>
-            </div>
-            <div class="bar" data-p="82">
-              <div class="bar-top"><span>Node.js &amp; Express.js</span><span class="pct">82%</span></div>
-              <div class="track"><div class="fill"></div></div>
-            </div>
-            <div class="bar" data-p="80">
-              <div class="bar-top"><span>JavaScript (ES6+)</span><span class="pct">80%</span></div>
-              <div class="track"><div class="fill"></div></div>
-            </div>
-            <div class="bar" data-p="78">
-              <div class="bar-top"><span>HTML5 &amp; CSS3</span><span class="pct">78%</span></div>
-              <div class="track"><div class="fill"></div></div>
-            </div>
-            <div class="bar" data-p="72">
-              <div class="bar-top"><span>REST APIs &amp; JWT Auth</span><span class="pct">72%</span></div>
-              <div class="track"><div class="fill"></div></div>
-            </div>
-            <div class="bar" data-p="68">
-              <div class="bar-top"><span>MongoDB</span><span class="pct">68%</span></div>
-              <div class="track"><div class="fill"></div></div>
-            </div>
-            <div class="bar" data-p="62">
-              <div class="bar-top"><span>DSA (Improving)</span><span class="pct">62%</span></div>
-              <div class="track"><div class="fill"></div></div>
-            </div>
-
-            <div class="tech-chips stagger" style="margin-top:24px;">
+            <div class="bar" data-p="90"><div class="bar-top"><span>TypeScript</span><span class="pct">90%</span></div><div class="track"><div class="fill"></div></div></div>
+            <div class="bar" data-p="88"><div class="bar-top"><span>Next.js</span><span class="pct">88%</span></div><div class="track"><div class="fill"></div></div></div>
+            <div class="bar" data-p="85"><div class="bar-top"><span>React.js</span><span class="pct">85%</span></div><div class="track"><div class="fill"></div></div></div>
+            <div class="bar" data-p="82"><div class="bar-top"><span>Node.js &amp; Express.js</span><span class="pct">82%</span></div><div class="track"><div class="fill"></div></div></div>
+            <div class="bar" data-p="80"><div class="bar-top"><span>JavaScript (ES6+)</span><span class="pct">80%</span></div><div class="track"><div class="fill"></div></div></div>
+            <div class="bar" data-p="78"><div class="bar-top"><span>HTML5 &amp; CSS3</span><span class="pct">78%</span></div><div class="track"><div class="fill"></div></div></div>
+            <div class="bar" data-p="72"><div class="bar-top"><span>REST APIs &amp; JWT Auth</span><span class="pct">72%</span></div><div class="track"><div class="fill"></div></div></div>
+            <div class="bar" data-p="68"><div class="bar-top"><span>MongoDB</span><span class="pct">68%</span></div><div class="track"><div class="fill"></div></div></div>
+            <div class="bar" data-p="62"><div class="bar-top"><span>DSA (Improving)</span><span class="pct">62%</span></div><div class="track"><div class="fill"></div></div></div>
+            <div class="tech-chips stagger">
               <span class="chip">Git / GitHub</span>
               <span class="chip">Vercel</span>
               <span class="chip">Netlify</span>
@@ -187,34 +131,13 @@ document.querySelector("#app").innerHTML = `
               <span class="chip">OOP</span>
             </div>
           </div>
-
           <div class="reveal-right">
             <div class="sec-tag" style="margin-top:28px;">Professional Skills</div>
             <div class="pro-skills stagger" style="margin-top:16px;">
-              <div class="pro-card">
-                <div class="pro-ring" style="--p:85">
-                  <div class="pro-inner">85%</div>
-                </div>
-                <div class="pro-label">Problem Solving</div>
-              </div>
-              <div class="pro-card">
-                <div class="pro-ring" style="--p:88">
-                  <div class="pro-inner">88%</div>
-                </div>
-                <div class="pro-label">Consistency</div>
-              </div>
-              <div class="pro-card">
-                <div class="pro-ring" style="--p:82">
-                  <div class="pro-inner">82%</div>
-                </div>
-                <div class="pro-label">Learning Mindset</div>
-              </div>
-              <div class="pro-card">
-                <div class="pro-ring" style="--p:78">
-                  <div class="pro-inner">78%</div>
-                </div>
-                <div class="pro-label">Communication</div>
-              </div>
+              <div class="pro-card"><div class="pro-ring" style="--p:85"><div class="pro-inner">85%</div></div><div class="pro-label">Problem Solving</div></div>
+              <div class="pro-card"><div class="pro-ring" style="--p:88"><div class="pro-inner">88%</div></div><div class="pro-label">Consistency</div></div>
+              <div class="pro-card"><div class="pro-ring" style="--p:82"><div class="pro-inner">82%</div></div><div class="pro-label">Learning Mindset</div></div>
+              <div class="pro-card"><div class="pro-ring" style="--p:78"><div class="pro-inner">78%</div></div><div class="pro-label">Communication</div></div>
             </div>
           </div>
         </div>
@@ -227,11 +150,12 @@ document.querySelector("#app").innerHTML = `
         <div class="reveal">
           <div class="sec-tag">// what i built</div>
           <h2 class="sec-title">Featured <span class="grad-word">Projects</span></h2>
-          <p class="sec-sub">All projects are live, deployed, and publicly accessible.</p>
+          <p class="sec-sub">All projects are live, deployed, and publicly accessible. Click any card to open the live demo.</p>
         </div>
         <div class="project-grid stagger">
 
-          <article class="p-card">
+          <article class="p-card" data-url="https://subtracker-murex.vercel.app/">
+            <span class="p-card-click-hint">CLICK TO OPEN ↗</span>
             <div class="p-badge p-featured">⭐ Flagship SaaS</div>
             <h3>SubTracker</h3>
             <p class="p-desc">Production-grade full-stack SaaS for subscription management. Built end-to-end with Next.js frontend and Node.js/Express REST API backed by MongoDB, deployed on Vercel.</p>
@@ -243,12 +167,13 @@ document.querySelector("#app").innerHTML = `
             </ul>
             <div class="p-stack">Next.js · TypeScript · Node.js · Express.js · MongoDB · JWT</div>
             <div class="p-links">
-              <a class="plink ghost" href="https://subtracker-murex.vercel.app/" target="_blank" rel="noreferrer">🔗 Live Demo</a>
-              <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="plink ghost" href="https://subtracker-murex.vercel.app/" target="_blank" rel="noreferrer" onclick="event.stopPropagation()">🔗 Live Demo</a>
+              <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer" onclick="event.stopPropagation()">GitHub</a>
             </div>
           </article>
 
-          <article class="p-card">
+          <article class="p-card" data-url="https://abhi13protfolio.netlify.app/">
+            <span class="p-card-click-hint">CLICK TO OPEN ↗</span>
             <div class="p-badge">Portfolio</div>
             <h3>Next.js Portfolio</h3>
             <p class="p-desc">Personal developer portfolio with responsive UI, smooth animations, and a modern layout. Deployed on Netlify with optimized build performance and mobile-first design.</p>
@@ -259,12 +184,13 @@ document.querySelector("#app").innerHTML = `
             </ul>
             <div class="p-stack">Next.js · TypeScript · Responsive · UI</div>
             <div class="p-links">
-              <a class="plink ghost" href="#home">🔗 You're Here</a>
-              <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="plink ghost" href="https://abhi13protfolio.netlify.app/" target="_blank" rel="noreferrer" onclick="event.stopPropagation()">🔗 Live Demo</a>
+              <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer" onclick="event.stopPropagation()">GitHub</a>
             </div>
           </article>
 
-          <article class="p-card">
+          <article class="p-card" data-url="https://task-manager-dashboard123.netlify.app/">
+            <span class="p-card-click-hint">CLICK TO OPEN ↗</span>
             <div class="p-badge">Dashboard</div>
             <h3>Task Manager Dashboard</h3>
             <p class="p-desc">Full-featured task management dashboard with CRUD operations, search/filter functionality, and reusable component architecture.</p>
@@ -275,12 +201,13 @@ document.querySelector("#app").innerHTML = `
             </ul>
             <div class="p-stack">Next.js · TypeScript · CRUD · API Routes</div>
             <div class="p-links">
-              <a class="plink ghost" href="https://task-manager-dashboard123.netlify.app/" target="_blank" rel="noreferrer">🔗 Live</a>
-              <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="plink ghost" href="https://task-manager-dashboard123.netlify.app/" target="_blank" rel="noreferrer" onclick="event.stopPropagation()">🔗 Live Demo</a>
+              <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer" onclick="event.stopPropagation()">GitHub</a>
             </div>
           </article>
 
-          <article class="p-card">
+          <article class="p-card" data-url="https://agrdemo1.netlify.app/">
+            <span class="p-card-click-hint">CLICK TO OPEN ↗</span>
             <div class="p-badge">Institutional</div>
             <h3>Agriculture Dept Website</h3>
             <p class="p-desc">Fully responsive multi-page institutional website for a college Agriculture Department with structured sections for admissions, programs, facilities, and contact.</p>
@@ -291,8 +218,8 @@ document.querySelector("#app").innerHTML = `
             </ul>
             <div class="p-stack">Next.js · TypeScript · Responsive UI · Routing</div>
             <div class="p-links">
-              <a class="plink ghost" href="https://agrdemo1.netlify.app/" target="_blank" rel="noreferrer">🔗 Live</a>
-              <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="plink ghost" href="https://agrdemo1.netlify.app/" target="_blank" rel="noreferrer" onclick="event.stopPropagation()">🔗 Live Demo</a>
+              <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer" onclick="event.stopPropagation()">GitHub</a>
             </div>
           </article>
 
@@ -308,36 +235,12 @@ document.querySelector("#app").innerHTML = `
           <h2 class="sec-title">My <span class="grad-word">Services</span></h2>
         </div>
         <div class="services-grid stagger">
-          <div class="srv-card">
-            <span class="srv-icon">⚡</span>
-            <h3>Next.js Applications</h3>
-            <p>Scalable apps using Next.js App Router, SSR/SSG, API routes, and file-based routing with optimized build performance.</p>
-          </div>
-          <div class="srv-card">
-            <span class="srv-icon">🔷</span>
-            <h3>TypeScript Development</h3>
-            <p>Type-safe, maintainable code with strong component architecture, interfaces, and best practices that scale.</p>
-          </div>
-          <div class="srv-card">
-            <span class="srv-icon">🎨</span>
-            <h3>Modern UI / Responsive</h3>
-            <p>Mobile-first responsive UI with reusable components, clean layouts, and great UX across all devices.</p>
-          </div>
-          <div class="srv-card">
-            <span class="srv-icon">🔗</span>
-            <h3>REST API &amp; Backend</h3>
-            <p>Node.js / Express REST API design with JWT authentication, protected middleware, and MongoDB integration.</p>
-          </div>
-          <div class="srv-card">
-            <span class="srv-icon">🚀</span>
-            <h3>Deployment &amp; DevOps</h3>
-            <p>End-to-end deployment on Vercel and Netlify with optimized builds, environment config, and CI/CD basics.</p>
-          </div>
-          <div class="srv-card">
-            <span class="srv-icon">🤖</span>
-            <h3>AI-Powered Features</h3>
-            <p>Integration of AI insights into web apps — as demonstrated in SubTracker for duplicate/unused subscription detection.</p>
-          </div>
+          <div class="srv-card"><span class="srv-icon">⚡</span><h3>Next.js Applications</h3><p>Scalable apps using Next.js App Router, SSR/SSG, API routes, and file-based routing with optimized build performance.</p></div>
+          <div class="srv-card"><span class="srv-icon">🔷</span><h3>TypeScript Development</h3><p>Type-safe, maintainable code with strong component architecture, interfaces, and best practices that scale.</p></div>
+          <div class="srv-card"><span class="srv-icon">🎨</span><h3>Modern UI / Responsive</h3><p>Mobile-first responsive UI with reusable components, clean layouts, and great UX across all devices.</p></div>
+          <div class="srv-card"><span class="srv-icon">🔗</span><h3>REST API &amp; Backend</h3><p>Node.js / Express REST API design with JWT authentication, protected middleware, and MongoDB integration.</p></div>
+          <div class="srv-card"><span class="srv-icon">🚀</span><h3>Deployment &amp; DevOps</h3><p>End-to-end deployment on Vercel and Netlify with optimized builds, environment config, and CI/CD basics.</p></div>
+          <div class="srv-card"><span class="srv-icon">🤖</span><h3>AI-Powered Features</h3><p>Integration of AI insights into web apps — as demonstrated in SubTracker for duplicate/unused subscription detection.</p></div>
         </div>
       </div>
     </section>
@@ -350,20 +253,8 @@ document.querySelector("#app").innerHTML = `
           <h2 class="sec-title">Certifi<span class="grad-word">cations</span></h2>
         </div>
         <div class="cert-grid stagger">
-          <div class="cert-card">
-            <div class="cert-icon">🟦</div>
-            <div class="cert-body">
-              <h4>Node.js &amp; MongoDB: Developing Back-end Database Applications</h4>
-              <p>IBM &nbsp;·&nbsp; Coursera</p>
-            </div>
-          </div>
-          <div class="cert-card">
-            <div class="cert-icon">🟧</div>
-            <div class="cert-body">
-              <h4>Programming with JavaScript</h4>
-              <p>Meta &nbsp;·&nbsp; Coursera</p>
-            </div>
-          </div>
+          <div class="cert-card"><div class="cert-icon">🟦</div><div class="cert-body"><h4>Node.js &amp; MongoDB: Developing Back-end Database Applications</h4><p>IBM &nbsp;·&nbsp; Coursera</p></div></div>
+          <div class="cert-card"><div class="cert-icon">🟧</div><div class="cert-body"><h4>Programming with JavaScript</h4><p>Meta &nbsp;·&nbsp; Coursera</p></div></div>
         </div>
       </div>
     </section>
@@ -379,21 +270,11 @@ document.querySelector("#app").innerHTML = `
         <div class="contact-grid">
           <div class="reveal-left">
             <div class="contact-info">
-              <a class="cinfo-item" href="mailto:abhibc.work@gmail.com">
-                <span class="cinfo-icon">📧</span>abhibc.work@gmail.com
-              </a>
-              <a class="cinfo-item" href="tel:+918217025255">
-                <span class="cinfo-icon">📞</span>+91-8217025255
-              </a>
-              <a class="cinfo-item" href="https://linkedin.com/in/abhibc2005/" target="_blank" rel="noreferrer">
-                <span class="cinfo-icon">💼</span>linkedin.com/in/abhibc2005/
-              </a>
-              <a class="cinfo-item" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">
-                <span class="cinfo-icon">💻</span>github.com/codewithabhi101
-              </a>
-              <a class="cinfo-item" href="/ABHI_RESUME.pdf" download>
-                <span class="cinfo-icon">📄</span>Download Resume
-              </a>
+              <a class="cinfo-item" href="mailto:abhibc.work@gmail.com"><span class="cinfo-icon">📧</span>abhibc.work@gmail.com</a>
+              <a class="cinfo-item" href="tel:+918217025255"><span class="cinfo-icon">📞</span>+91-8217025255</a>
+              <a class="cinfo-item" href="https://linkedin.com/in/abhibc2005/" target="_blank" rel="noreferrer"><span class="cinfo-icon">💼</span>linkedin.com/in/abhibc2005/</a>
+              <a class="cinfo-item" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer"><span class="cinfo-icon">💻</span>github.com/codewithabhi101</a>
+              <a class="cinfo-item" href="/ABHI_RESUME.pdf" download><span class="cinfo-icon">📄</span>Download Resume</a>
             </div>
           </div>
           <div class="reveal-right">
@@ -414,14 +295,14 @@ document.querySelector("#app").innerHTML = `
   </main>
 `;
 
-/* ── CURSOR GLOW ── */
+/* CURSOR GLOW */
 const glow = document.getElementById("cursorGlow");
 document.addEventListener("mousemove", (e) => {
   glow.style.left = e.clientX + "px";
   glow.style.top = e.clientY + "px";
 });
 
-/* ── ACTIVE NAV ON CLICK ── */
+/* ACTIVE NAV ON CLICK */
 const navLinks = document.querySelectorAll(".navlink");
 navLinks.forEach((a) => {
   a.addEventListener("click", () => {
@@ -430,55 +311,46 @@ navLinks.forEach((a) => {
   });
 });
 
-/* ── ACTIVE NAV ON SCROLL ── */
+/* ACTIVE NAV ON SCROLL */
 const sections = document.querySelectorAll("section[id]");
-const navIO = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((e) => {
-      if (e.isIntersecting) {
-        navLinks.forEach((a) => {
-          a.classList.toggle("active", a.getAttribute("href") === "#" + e.target.id);
-        });
-      }
-    });
-  },
-  { threshold: 0.4 }
-);
+const navIO = new IntersectionObserver((entries) => {
+  entries.forEach((e) => {
+    if (e.isIntersecting) {
+      navLinks.forEach((a) => {
+        a.classList.toggle("active", a.getAttribute("href") === "#" + e.target.id);
+      });
+    }
+  });
+}, { threshold: 0.4 });
 sections.forEach((s) => navIO.observe(s));
 
-/* ── SCROLL REVEAL ── */
+/* SCROLL REVEAL */
 const revealEls = document.querySelectorAll(".reveal, .reveal-left, .reveal-right, .stagger");
-const revealIO = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((e) => {
-      if (e.isIntersecting) {
-        e.target.classList.add("visible");
-        revealIO.unobserve(e.target);
-      }
-    });
-  },
-  { threshold: 0.15 }
-);
+const revealIO = new IntersectionObserver((entries) => {
+  entries.forEach((e) => {
+    if (e.isIntersecting) {
+      e.target.classList.add("visible");
+      revealIO.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.15 });
 revealEls.forEach((el) => revealIO.observe(el));
 
-/* ── SKILL BARS ── */
+/* SKILL BARS */
 const bars = document.querySelectorAll(".bar");
-const barIO = new IntersectionObserver(
-  (entries) => {
-    if (entries[0].isIntersecting) {
-      bars.forEach((b) => {
-        const fill = b.querySelector(".fill");
-        if (fill) fill.style.width = b.dataset.p + "%";
-      });
-      barIO.disconnect();
-    }
-  },
-  { threshold: 0.3 }
-);
+const barIO = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+    bars.forEach((b) => {
+      const fill = b.querySelector(".fill");
+      if (fill) fill.style.width = b.dataset.p + "%";
+    });
+    barIO.disconnect();
+  }
+}, { threshold: 0.3 });
 const skillsSec = document.getElementById("skills");
 if (skillsSec) barIO.observe(skillsSec);
 
-/* ── TYPEWRITER ── */
+/* TYPEWRITER */
 const roleEl = document.getElementById("typedRole");
 if (roleEl) {
   const roles = [
@@ -492,20 +364,45 @@ if (roleEl) {
     if (!deleting) {
       roleEl.textContent = current.substring(0, ci + 1);
       ci++;
-      if (ci === current.length) {
-        deleting = true;
-        setTimeout(type, 2200);
-        return;
-      }
+      if (ci === current.length) { deleting = true; setTimeout(type, 2200); return; }
     } else {
       roleEl.textContent = current.substring(0, ci - 1);
       ci--;
-      if (ci === 0) {
-        deleting = false;
-        ri = (ri + 1) % roles.length;
-      }
+      if (ci === 0) { deleting = false; ri = (ri + 1) % roles.length; }
     }
     setTimeout(type, deleting ? 28 : 55);
   }
   setTimeout(type, 1200);
 }
+
+/* PROJECT CARDS — click to open + ripple */
+const rippleStyle = document.createElement("style");
+rippleStyle.textContent = "@keyframes rippleOut{to{width:400px;height:400px;opacity:0;}}";
+document.head.appendChild(rippleStyle);
+
+document.querySelectorAll(".p-card").forEach((card) => {
+  card.addEventListener("click", function(e) {
+    if (e.target.closest("a")) return;
+    const url = this.dataset.url;
+    if (!url) return;
+    const ripple = document.createElement("span");
+    const rect = this.getBoundingClientRect();
+    ripple.style.cssText = `position:absolute;left:${e.clientX - rect.left}px;top:${e.clientY - rect.top}px;width:0;height:0;border-radius:50%;background:rgba(0,255,198,.18);transform:translate(-50%,-50%);animation:rippleOut .6s ease forwards;pointer-events:none;z-index:10;`;
+    this.appendChild(ripple);
+    setTimeout(() => ripple.remove(), 700);
+    window.open(url, "_blank", "noreferrer");
+  });
+});
+
+/* VIEW PROJECTS BUTTON */
+document.getElementById("viewProjectsBtn")?.addEventListener("click", function(e) {
+  e.preventDefault();
+  const sec = document.getElementById("projects");
+  if (!sec) return;
+  sec.scrollIntoView({ behavior: "smooth" });
+  setTimeout(() => {
+    sec.style.transition = "background .3s";
+    sec.style.background = "rgba(0,255,198,.03)";
+    setTimeout(() => { sec.style.background = ""; }, 600);
+  }, 600);
+});
