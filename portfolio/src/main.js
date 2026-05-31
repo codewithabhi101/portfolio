@@ -100,29 +100,7 @@ document.querySelector("#app").innerHTML = `
               </div>
             </div>
           </div>
-          <div class="reveal-right">
-            <div class="edu-card">
-              <div class="sec-tag">// education</div>
-              <div class="edu-item">
-                <div class="edu-inst">AIET &mdash; Mijar, Moodbidri</div>
-                <div class="edu-deg">B.E. &mdash; Information Science &amp; Engineering</div>
-                <div class="edu-year">2023 &ndash; Present</div>
-                <span class="edu-grade">CGPA: 7.5 &nbsp;|&nbsp; SGPAs: 7.6, 7.0, 7.4, 7.9, 7.6</span>
-              </div>
-              <div class="edu-item">
-                <div class="edu-inst">Shubhodaya PU College</div>
-                <div class="edu-deg">PUC (12th Grade)</div>
-                <div class="edu-year">2021 &ndash; 2023</div>
-                <span class="edu-grade">66%</span>
-              </div>
-              <div class="edu-item">
-                <div class="edu-inst">Shubhodaya English School</div>
-                <div class="edu-deg">SSLC (10th Grade)</div>
-                <div class="edu-year">2020 &ndash; 2021</div>
-                <span class="edu-grade">81%</span>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
