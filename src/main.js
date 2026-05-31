@@ -34,15 +34,15 @@ document.querySelector("#app").innerHTML = `
           <h1 class="hero-name">
             <span class="grad">Abhi B C</span>
           </h1>
-          <p class="hero-role" id="typedRole">Frontend Developer &middot; Next.js &middot; TypeScript &middot; Full-Stack</p>
+          <p class="hero-role" id="typedRole">Frontend Developer · Next.js · TypeScript · Full-Stack</p>
           <p class="hero-desc">
             Frontend-focused developer with full-stack experience. Built and shipped
-            <strong>SubTracker</strong> &mdash; a production-grade SaaS &mdash; using Next.js, Node.js,
+            <strong>SubTracker</strong> — a production-grade SaaS — using Next.js, Node.js,
             Express.js, and MongoDB. Strong in component architecture, REST APIs, and JWT auth.
           </p>
           <div class="hero-actions">
-            <a class="btn neon" href="/ABHI_RESUME.pdf" download>&#8659; Download CV</a>
-            <a class="btn ghost" href="#projects">View Projects &rarr;</a>
+            <a class="btn neon" href="/ABHI_RESUME.pdf" download>⬇ Download CV</a>
+            <a class="btn ghost" href="#projects">View Projects →</a>
             <a class="btn ghost" href="#contact">Hire Me</a>
           </div>
         </div>
@@ -72,7 +72,7 @@ document.querySelector("#app").innerHTML = `
               Engineering at AIET, Moodbidri (CGPA: 7.5).
             </p>
             <p>
-              I've independently designed, built, and deployed multiple real-world projects &mdash;
+              I've independently designed, built, and deployed multiple real-world projects —
               all live and publicly accessible. My flagship project <strong>SubTracker</strong>
               is a full-stack SaaS with JWT auth, AI-powered insights, and live Vercel deployment.
             </p>
@@ -100,7 +100,29 @@ document.querySelector("#app").innerHTML = `
               </div>
             </div>
           </div>
-
+          <div class="reveal-right">
+            <div class="edu-card">
+              <div class="sec-tag">// education</div>
+              <div class="edu-item">
+                <div class="edu-inst">AIET — Mijar, Moodbidri</div>
+                <div class="edu-deg">B.E. — Information Science &amp; Engineering</div>
+                <div class="edu-year">2023 – Present</div>
+                <span class="edu-grade">CGPA: 7.5 &nbsp;|&nbsp; SGPAs: 7.6, 7.0, 7.4, 7.9, 7.6</span>
+              </div>
+              <div class="edu-item">
+                <div class="edu-inst">Shubhodaya PU College</div>
+                <div class="edu-deg">PUC (12th Grade)</div>
+                <div class="edu-year">2021 – 2023</div>
+                <span class="edu-grade">66%</span>
+              </div>
+              <div class="edu-item">
+                <div class="edu-inst">Shubhodaya English School</div>
+                <div class="edu-deg">SSLC (10th Grade)</div>
+                <div class="edu-year">2020 – 2021</div>
+                <span class="edu-grade">81%</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -210,7 +232,7 @@ document.querySelector("#app").innerHTML = `
         <div class="project-grid stagger">
 
           <article class="p-card">
-            <div class="p-badge p-featured">&#9889; Flagship SaaS</div>
+            <div class="p-badge p-featured">⭐ Flagship SaaS</div>
             <h3>SubTracker</h3>
             <p class="p-desc">Production-grade full-stack SaaS for subscription management. Built end-to-end with Next.js frontend and Node.js/Express REST API backed by MongoDB, deployed on Vercel.</p>
             <ul class="p-bullets">
@@ -219,9 +241,9 @@ document.querySelector("#app").innerHTML = `
               <li>AI-powered insights to detect duplicate/unused subscriptions</li>
               <li>Scalable MongoDB data models</li>
             </ul>
-            <div class="p-stack">Next.js &middot; TypeScript &middot; Node.js &middot; Express.js &middot; MongoDB &middot; JWT</div>
+            <div class="p-stack">Next.js · TypeScript · Node.js · Express.js · MongoDB · JWT</div>
             <div class="p-links">
-              <a class="plink ghost" href="https://subtracker-murex.vercel.app/" target="_blank" rel="noreferrer">&#128279; Live Demo</a>
+              <a class="plink ghost" href="https://subtracker-murex.vercel.app/" target="_blank" rel="noreferrer">🔗 Live Demo</a>
               <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
             </div>
           </article>
@@ -235,9 +257,9 @@ document.querySelector("#app").innerHTML = `
               <li>File-based routing &amp; fast page loads</li>
               <li>Mobile-first, clean cross-device experience</li>
             </ul>
-            <div class="p-stack">Next.js &middot; TypeScript &middot; Responsive &middot; UI</div>
+            <div class="p-stack">Next.js · TypeScript · Responsive · UI</div>
             <div class="p-links">
-              <a class="plink ghost" href="#home">&#128279; You're Here</a>
+              <a class="plink ghost" href="#home">🔗 You're Here</a>
               <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
             </div>
           </article>
@@ -251,9 +273,9 @@ document.querySelector("#app").innerHTML = `
               <li>Search &amp; filter with API routes</li>
               <li>Reusable component system</li>
             </ul>
-            <div class="p-stack">Next.js &middot; TypeScript &middot; CRUD &middot; API Routes</div>
+            <div class="p-stack">Next.js · TypeScript · CRUD · API Routes</div>
             <div class="p-links">
-              <a class="plink ghost" href="https://task-manager-dashboard123.netlify.app/" target="_blank" rel="noreferrer">&#128279; Live</a>
+              <a class="plink ghost" href="https://task-manager-dashboard123.netlify.app/" target="_blank" rel="noreferrer">🔗 Live</a>
               <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
             </div>
           </article>
@@ -267,9 +289,9 @@ document.querySelector("#app").innerHTML = `
               <li>File-based routing &amp; mobile-first layouts</li>
               <li>Deployed on Netlify</li>
             </ul>
-            <div class="p-stack">Next.js &middot; TypeScript &middot; Responsive UI &middot; Routing</div>
+            <div class="p-stack">Next.js · TypeScript · Responsive UI · Routing</div>
             <div class="p-links">
-              <a class="plink ghost" href="https://agrdemo1.netlify.app/" target="_blank" rel="noreferrer">&#128279; Live</a>
+              <a class="plink ghost" href="https://agrdemo1.netlify.app/" target="_blank" rel="noreferrer">🔗 Live</a>
               <a class="plink neon" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">GitHub</a>
             </div>
           </article>
@@ -287,34 +309,34 @@ document.querySelector("#app").innerHTML = `
         </div>
         <div class="services-grid stagger">
           <div class="srv-card">
-            <span class="srv-icon">&#9889;</span>
+            <span class="srv-icon">⚡</span>
             <h3>Next.js Applications</h3>
             <p>Scalable apps using Next.js App Router, SSR/SSG, API routes, and file-based routing with optimized build performance.</p>
           </div>
           <div class="srv-card">
-            <span class="srv-icon">&#128296;</span>
+            <span class="srv-icon">🔷</span>
             <h3>TypeScript Development</h3>
             <p>Type-safe, maintainable code with strong component architecture, interfaces, and best practices that scale.</p>
           </div>
           <div class="srv-card">
-            <span class="srv-icon">&#127912;</span>
+            <span class="srv-icon">🎨</span>
             <h3>Modern UI / Responsive</h3>
             <p>Mobile-first responsive UI with reusable components, clean layouts, and great UX across all devices.</p>
           </div>
           <div class="srv-card">
-            <span class="srv-icon">&#128279;</span>
+            <span class="srv-icon">🔗</span>
             <h3>REST API &amp; Backend</h3>
             <p>Node.js / Express REST API design with JWT authentication, protected middleware, and MongoDB integration.</p>
           </div>
           <div class="srv-card">
-            <span class="srv-icon">&#128640;</span>
+            <span class="srv-icon">🚀</span>
             <h3>Deployment &amp; DevOps</h3>
             <p>End-to-end deployment on Vercel and Netlify with optimized builds, environment config, and CI/CD basics.</p>
           </div>
           <div class="srv-card">
-            <span class="srv-icon">&#129302;</span>
+            <span class="srv-icon">🤖</span>
             <h3>AI-Powered Features</h3>
-            <p>Integration of AI insights into web apps &mdash; as demonstrated in SubTracker for duplicate/unused subscription detection.</p>
+            <p>Integration of AI insights into web apps — as demonstrated in SubTracker for duplicate/unused subscription detection.</p>
           </div>
         </div>
       </div>
@@ -329,17 +351,17 @@ document.querySelector("#app").innerHTML = `
         </div>
         <div class="cert-grid stagger">
           <div class="cert-card">
-            <div class="cert-icon">&#127891;</div>
+            <div class="cert-icon">🟦</div>
             <div class="cert-body">
               <h4>Node.js &amp; MongoDB: Developing Back-end Database Applications</h4>
-              <p>IBM &nbsp;&middot;&nbsp; Coursera</p>
+              <p>IBM &nbsp;·&nbsp; Coursera</p>
             </div>
           </div>
           <div class="cert-card">
-            <div class="cert-icon">&#127891;</div>
+            <div class="cert-icon">🟧</div>
             <div class="cert-body">
               <h4>Programming with JavaScript</h4>
-              <p>Meta &nbsp;&middot;&nbsp; Coursera</p>
+              <p>Meta &nbsp;·&nbsp; Coursera</p>
             </div>
           </div>
         </div>
@@ -358,19 +380,19 @@ document.querySelector("#app").innerHTML = `
           <div class="reveal-left">
             <div class="contact-info">
               <a class="cinfo-item" href="mailto:abhibc.work@gmail.com">
-                <span class="cinfo-icon">&#128138;</span>abhibc.work@gmail.com
+                <span class="cinfo-icon">📧</span>abhibc.work@gmail.com
               </a>
               <a class="cinfo-item" href="tel:+918217025255">
-                <span class="cinfo-icon">&#128222;</span>+91-8217025255
+                <span class="cinfo-icon">📞</span>+91-8217025255
               </a>
               <a class="cinfo-item" href="https://linkedin.com/in/abhibc2005/" target="_blank" rel="noreferrer">
-                <span class="cinfo-icon">&#128101;</span>linkedin.com/in/abhibc2005/
+                <span class="cinfo-icon">💼</span>linkedin.com/in/abhibc2005/
               </a>
               <a class="cinfo-item" href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer">
-                <span class="cinfo-icon">&#128008;</span>github.com/codewithabhi101
+                <span class="cinfo-icon">💻</span>github.com/codewithabhi101
               </a>
               <a class="cinfo-item" href="/ABHI_RESUME.pdf" download>
-                <span class="cinfo-icon">&#128196;</span>Download Resume
+                <span class="cinfo-icon">📄</span>Download Resume
               </a>
             </div>
           </div>
@@ -379,7 +401,7 @@ document.querySelector("#app").innerHTML = `
               <input type="text" name="name" placeholder="Your Name" required />
               <input type="email" name="email" placeholder="Your Email" required />
               <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-              <button class="btn neon full" type="submit">Send Message &#10084;</button>
+              <button class="btn neon full" type="submit">Send Message ✦</button>
             </form>
           </div>
         </div>
@@ -387,7 +409,7 @@ document.querySelector("#app").innerHTML = `
     </section>
 
     <footer class="footer">
-      <p>&copy; 2026 <span class="dot-text">Abhi B C</span> &nbsp;&middot;&nbsp; Built with Vite &nbsp;&middot;&nbsp; Deployed on Netlify</p>
+      <p>© 2026 <span class="dot-text">Abhi B C</span> &nbsp;·&nbsp; Built with Vite &nbsp;·&nbsp; Deployed on Netlify</p>
     </footer>
   </main>
 `;
@@ -487,8 +509,3 @@ if (roleEl) {
   }
   setTimeout(type, 1200);
 }
-
-/* ── FIX CARD LINKS ── */
-document.querySelectorAll(".p-card a").forEach((a) => {
-  a.addEventListener("click", (e) => e.stopPropagation());
-});
