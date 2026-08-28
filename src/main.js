@@ -1,53 +1,65 @@
 import "./style.css";
 
 /* ══════════════════════════════════════════════
-   1. BRAND ICONS & DATA
+   1. BRAND ICONS & DATA (Accurate Devicon / Simple Icons CDN)
    ══════════════════════════════════════════════ */
 
 const brandIcons = {
-  react: `<svg width="22" height="22" viewBox="-11.5 -10.23174 23 20.46348"><circle cx="0" cy="0" r="2.05" fill="#61dafb"/><g stroke="#61dafb" stroke-width="1" fill="none"><ellipse rx="11" ry="4.2"/><ellipse rx="11" ry="4.2" transform="rotate(60)"/><ellipse rx="11" ry="4.2" transform="rotate(120)"/></g></svg>`,
-  ts: `<svg width="22" height="22" viewBox="0 0 128 128"><path fill="#3178C6" d="M0 0h128v128H0z"/><path fill="#FFF" d="M37.8 77.1v31.4H24.3V77.1H8.6V65.8h44.9v11.3H37.8zm63.4 12.3c0 3.7-1.1 6.8-3.4 9.3s-5.6 4.3-10 5.4-9.2 1.6-14.4 1.6c-5.4 0-10.4-.9-15.1-2.6v-12c4.4 2.3 8.8 4 13.1 5.1s8.4 1.6 12.2 1.6c3.2 0 5.7-.6 7.4-1.7s2.6-2.8 2.6-5.1c0-1.8-.7-3.3-2.1-4.5s-3.7-2.4-7-3.7l-9.6-3.8c-5.4-2.1-9.4-4.7-11.9-7.9s-3.7-7.2-3.7-12c0-3.6 1.1-6.7 3.3-9.3s5.4-4.5 9.5-5.7 8.9-1.8 14.3-1.8c4.6 0 9.1.7 13.3 2s8.2 3.1 12 5.5l-5.6 10.4c-3.6-2-7-3.5-10.3-4.4s-6.5-1.4-9.6-1.4c-3.1 0-5.5.6-7.1 1.7s-2.4 2.6-2.4 4.5c0 1.6.6 2.9 1.9 4s3.3 2.1 6.1 3.2l10.1 4c5.6 2.2 9.7 4.9 12.3 8.1s3.9 7.3 3.9 12.3z"/></svg>`,
-  next: `<svg width="22" height="22" viewBox="0 0 180 180" fill="none"><mask id="next_mask" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="180" height="180"><circle cx="90" cy="90" r="90" fill="#000"/></mask><g mask="url(#next_mask)"><circle cx="90" cy="90" r="90" fill="#000"/><path d="M149.508 157.52L69.142 54H54V125.97H66.1136V69.3836L139.999 164.845C143.333 162.614 146.509 160.165 149.508 157.52Z" fill="url(#next_grad)"/><rect x="115" y="54" width="12" height="72" fill="url(#next_grad2)"/></g><defs><linearGradient id="next_grad" x1="109" y1="116.5" x2="144.5" y2="160.5" gradientUnits="userSpaceOnUse"><stop stop-color="white"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="next_grad2" x1="121" y1="54" x2="120.799" y2="106.875" gradientUnits="userSpaceOnUse"><stop stop-color="white"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient></defs></svg>`,
-  tailwind: `<svg width="22" height="22" viewBox="0 0 24 24" fill="#38BDF8"><path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"/></svg>`,
-  html: `<svg width="22" height="22" viewBox="0 0 512 512"><path fill="#E34F26" d="M71 460L30 0h452l-41 460-185 52z"/><path fill="#EF652A" d="M256 472l149-41 35-394H256z"/><path fill="#EBEBEB" d="M256 208h-74l-5-57h79V95H113l15 170h128zm0 147l-63-17-4-45h-56l7 89 116 32z"/><path fill="#FFF" d="M256 208v-56h75l7-57H256V38h143l-15 170zm0 147v57l116-32 11-125h-56l-6 83z"/></svg>`,
-  node: `<svg width="22" height="22" viewBox="0 0 32 32"><path fill="#339933" d="M16 2.5l12.1 7v14l-12.1 7-12.1-7v-14L16 2.5zm0 2.3L5.9 10.6v11.8L16 28.2l10.1-5.8V10.6L16 4.8zm-1 6.2v10h2V11h-2z"/></svg>`,
-  express: `<svg width="22" height="22" viewBox="0 0 50 50"><text x="4" y="36" font-family="system-ui, sans-serif" font-size="34" font-weight="900" fill="#171614">ex</text></svg>`,
-  mysql: `<svg width="22" height="22" viewBox="0 0 24 24" fill="#00758F"><path d="M12 3C6.48 3 2 7.48 2 13c0 3.1 1.45 5.86 3.72 7.67l1.24-1.57C5.22 17.72 4 15.51 4 13c0-4.41 3.59-8 8-8s8 3.59 8 8c0 2.51-1.22 4.72-2.96 6.1l1.24 1.57C20.55 18.86 22 16.1 22 13c0-5.52-4.48-10-10-10z"/></svg>`,
-  mongo: `<svg width="22" height="22" viewBox="0 0 24 24"><path fill="#47A248" d="M12 1.5c-.3 0-.6.1-.8.3C10.5 2.5 5 8.1 5 14.5c0 4.1 3.1 7.5 7 8 3.9-.5 7-3.9 7-8 0-6.4-5.5-12-6.2-12.7-.2-.2-.5-.3-.8-.3zm0 2.2c1.2 1.5 5 6.6 5 10.8 0 3-2.2 5.5-5 6-2.8-.5-5-3-5-6 0-4.2 3.8-9.3 5-10.8z"/><path fill="#47A248" d="M12 6.5v14c2.2-.5 4-2.5 4-5 0-3.5-3.3-7.7-4-9z"/></svg>`,
-  git: `<svg width="22" height="22" viewBox="0 0 24 24"><path fill="#F05032" d="M21.6 10.8l-8.4-8.4a1.8 1.8 0 00-2.5 0L8.4 4.7l3.2 3.2a2.1 2.1 0 012.7 2.7l3.1 3.1a2.1 2.1 0 11-1.3 1.3l-2.9-2.9v4.3a2.1 2.1 0 11-1.8 0v-4.5a2.1 2.1 0 01-1.2-2.7L7 6.1 2.4 10.8a1.8 1.8 0 000 2.5l8.4 8.4a1.8 1.8 0 002.5 0l8.3-8.4a1.8 1.8 0 000-2.5z"/></svg>`,
-  aws: `<svg width="22" height="22" viewBox="0 0 24 24"><path fill="#FF9900" d="M18.8 15.2c-2.3 1.7-5.5 2.6-8.4 2.6-4.1 0-7.7-1.5-10.4-4-.2-.2 0-.5.3-.4 3 1.7 6.6 2.7 10.4 2.7 2.6 0 5.4-.7 7.9-2.1.4-.3.7.2.2.6z"/><path fill="#FF9900" d="M19.9 14c-.3-.4-1.8-.2-2.5-.1-.2 0-.3-.2-.1-.3.9-.7 2.4-.5 2.7-.2.3.4.1 1.9-.8 2.6-.2.1-.3 0-.3-.2.2-.6.7-1.4 1-1.8z"/></svg>`,
-  docker: `<svg width="22" height="22" viewBox="0 0 24 24" fill="#2496ED"><path d="M13 10.5h2v2h-2zm-3 0h2v2h-2zm-3 0h2v2H7zm6-3h2v2h-2zm-3 0h2v2h-2zm-3 0h2v2H7zm14.5 4.5c-.3-.2-1.4-.4-2.3.2-.2-1.3-.9-2-1.1-2.2l-.4.3c.3.9.1 2.1-.2 2.8-.7.2-2 .3-2.5-.2l-.3.3c.4.6 1.1.9 2 .9-1.2 3.4-3.8 4.4-7.7 4.4H2.5C2.2 19 4 21 8.5 21c6.5 0 11-4.2 11.5-9.5h1.5z"/></svg>`,
-  jest: `<svg width="22" height="22" viewBox="0 0 24 24"><path fill="#C21325" d="M12 2a9 9 0 00-9 9c0 4.2 2.8 7.7 6.7 8.7L12 22l2.3-2.3c3.9-1 6.7-4.5 6.7-8.7a9 9 0 00-9-9zm-2.5 9a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm5 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"/></svg>`,
-  whatsapp: `<svg width="20" height="20" viewBox="0 0 24 24" fill="#25D366"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>`
+  js: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="22" height="22" alt="JavaScript" />`,
+  react: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="22" height="22" alt="React" />`,
+  ts: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="22" height="22" alt="TypeScript" />`,
+  next: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" width="22" height="22" alt="Next.js" />`,
+  tailwind: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" width="22" height="22" alt="Tailwind CSS" />`,
+  html: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="22" height="22" alt="HTML5" />`,
+  java: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="22" height="22" alt="Java" />`,
+  sql: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" width="22" height="22" alt="SQL" />`,
+  node: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" width="22" height="22" alt="Node.js" />`,
+  express: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" width="22" height="22" alt="Express.js" />`,
+  mysql: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" width="22" height="22" alt="MySQL" />`,
+  mongo: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" width="22" height="22" alt="MongoDB" />`,
+  vscode: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" width="22" height="22" alt="VS Code" />`,
+  git: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="22" height="22" alt="Git" />`,
+  github: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="22" height="22" alt="GitHub" />`,
+  docker: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" width="22" height="22" alt="Docker" />`,
+  aws: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="22" height="22" alt="AWS" />`,
+  jest: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg" width="22" height="22" alt="Jest" />`,
+  whatsapp: `<img src="https://cdn.simpleicons.org/whatsapp/25D366" width="22" height="22" alt="WhatsApp" />`,
+  gmail: `<img src="https://cdn.simpleicons.org/gmail/EA4335" width="22" height="22" alt="Gmail" />`
 };
 
+/* ── 6 ITEMS PER COLUMN (EQUAL LENGTH) ── */
 const skillsColumns = {
   frontend: {
     title: "Frontend Development",
     items: [
-      { name: "React.js", pct: 95, icon: brandIcons.react },
-      { name: "TypeScript", pct: 90, icon: brandIcons.ts },
-      { name: "Next.js", pct: 85, icon: brandIcons.next },
-      { name: "Tailwind CSS", pct: 90, icon: brandIcons.tailwind },
-      { name: "HTML5 / CSS3", pct: 95, icon: brandIcons.html }
+      { name: "JavaScript", icon: brandIcons.js },
+      { name: "React.js", icon: brandIcons.react },
+      { name: "TypeScript", icon: brandIcons.ts },
+      { name: "Next.js", icon: brandIcons.next },
+      { name: "Tailwind CSS", icon: brandIcons.tailwind },
+      { name: "HTML5 / CSS3", icon: brandIcons.html }
     ]
   },
   backend: {
     title: "Backend Development",
     items: [
-      { name: "Node.js", pct: 90, icon: brandIcons.node },
-      { name: "Express.js", pct: 85, icon: brandIcons.express },
-      { name: "MySQL", pct: 85, icon: brandIcons.mysql },
-      { name: "MongoDB", pct: 80, icon: brandIcons.mongo }
+      { name: "Java", icon: brandIcons.java },
+      { name: "SQL", icon: brandIcons.sql },
+      { name: "Node.js", icon: brandIcons.node },
+      { name: "Express.js", icon: brandIcons.express },
+      { name: "MySQL", icon: brandIcons.mysql },
+      { name: "MongoDB", icon: brandIcons.mongo }
     ]
   },
   tools: {
     title: "Tools & Technologies",
     items: [
-      { name: "Git / GitHub", pct: 90, icon: brandIcons.git },
-      { name: "AWS", pct: 70, icon: brandIcons.aws },
-      { name: "Docker", pct: 80, icon: brandIcons.docker },
-      { name: "Jest / Testing", pct: 85, icon: brandIcons.jest }
+      { name: "VS Code", icon: brandIcons.vscode },
+      { name: "Git", icon: brandIcons.git },
+      { name: "GitHub", icon: brandIcons.github },
+      { name: "Docker", icon: brandIcons.docker },
+      { name: "AWS", icon: brandIcons.aws },
+      { name: "Jest / Testing", icon: brandIcons.jest }
     ]
   }
 };
@@ -213,11 +225,36 @@ const certifications = [
   }
 ];
 
-const techCloud = [
-  "JavaScript", "TypeScript", "Java", "SQL", "React", "React Native", "Next.js",
-  "Spring Boot", "Node.js", "Express.js", "PostgreSQL", "MySQL", "MongoDB",
-  "SQLite", "IndexedDB", "GraphQL", "Hasura", "Spring Security", "JWT Auth",
-  "OAuth 2.0", "Docker", "Zustand", "Dexie.js", "Vercel", "Netlify", "Render", "EAS Build"
+// Full Tech Stack with Official & Accurate Logos
+const techStackGrid = [
+  { name: "JavaScript", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
+  { name: "TypeScript", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" },
+  { name: "Java", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" },
+  { name: "SQL", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" },
+  { name: "AWS", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
+  { name: "VS Code", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" },
+  { name: "React", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
+  { name: "React Native", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
+  { name: "Next.js", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" },
+  { name: "Spring Boot", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" },
+  { name: "Node.js", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" },
+  { name: "Express.js", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" },
+  { name: "PostgreSQL", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
+  { name: "MySQL", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" },
+  { name: "MongoDB", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
+  { name: "SQLite", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" },
+  { name: "IndexedDB", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" },
+  { name: "GraphQL", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg" },
+  { name: "Hasura", iconUrl: "https://cdn.simpleicons.org/hasura/3970FD" },
+  { name: "Spring Security", iconUrl: "https://cdn.simpleicons.org/springsecurity/6DB33F" },
+  { name: "JWT Auth", iconUrl: "https://cdn.simpleicons.org/jsonwebtokens/D63AFF" },
+  { name: "OAuth 2.0", iconUrl: "https://cdn.simpleicons.org/auth0/EB5424" },
+  { name: "Docker", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" },
+  { name: "Git", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" },
+  { name: "GitHub", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" },
+  { name: "Vercel", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" },
+  { name: "Netlify", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg" },
+  { name: "Render", iconUrl: "https://cdn.simpleicons.org/render/46E3B7" }
 ];
 
 const spokenLanguages = [
@@ -460,17 +497,9 @@ document.querySelector("#app").innerHTML = `
             <h3 class="category-heading">${skillsColumns.frontend.title}</h3>
             <div class="skill-items-stack">
               ${skillsColumns.frontend.items.map(s => `
-                <div class="skill-item-row" data-p="${s.pct}">
-                  <div class="skill-item-header">
-                    <div class="skill-title-with-icon">
-                      <span class="skill-brand-icon">${s.icon}</span>
-                      <span class="skill-name">${s.name}</span>
-                    </div>
-                    <span class="skill-percentage">${s.pct}%</span>
-                  </div>
-                  <div class="skill-progress-track">
-                    <div class="skill-progress-bar"></div>
-                  </div>
+                <div class="skill-item-card">
+                  <span class="skill-brand-icon">${s.icon}</span>
+                  <span class="skill-name">${s.name}</span>
                 </div>
               `).join("")}
             </div>
@@ -481,17 +510,9 @@ document.querySelector("#app").innerHTML = `
             <h3 class="category-heading">${skillsColumns.backend.title}</h3>
             <div class="skill-items-stack">
               ${skillsColumns.backend.items.map(s => `
-                <div class="skill-item-row" data-p="${s.pct}">
-                  <div class="skill-item-header">
-                    <div class="skill-title-with-icon">
-                      <span class="skill-brand-icon">${s.icon}</span>
-                      <span class="skill-name">${s.name}</span>
-                    </div>
-                    <span class="skill-percentage">${s.pct}%</span>
-                  </div>
-                  <div class="skill-progress-track">
-                    <div class="skill-progress-bar"></div>
-                  </div>
+                <div class="skill-item-card">
+                  <span class="skill-brand-icon">${s.icon}</span>
+                  <span class="skill-name">${s.name}</span>
                 </div>
               `).join("")}
             </div>
@@ -502,17 +523,9 @@ document.querySelector("#app").innerHTML = `
             <h3 class="category-heading">${skillsColumns.tools.title}</h3>
             <div class="skill-items-stack">
               ${skillsColumns.tools.items.map(s => `
-                <div class="skill-item-row" data-p="${s.pct}">
-                  <div class="skill-item-header">
-                    <div class="skill-title-with-icon">
-                      <span class="skill-brand-icon">${s.icon}</span>
-                      <span class="skill-name">${s.name}</span>
-                    </div>
-                    <span class="skill-percentage">${s.pct}%</span>
-                  </div>
-                  <div class="skill-progress-track">
-                    <div class="skill-progress-bar"></div>
-                  </div>
+                <div class="skill-item-card">
+                  <span class="skill-brand-icon">${s.icon}</span>
+                  <span class="skill-name">${s.name}</span>
                 </div>
               `).join("")}
             </div>
@@ -610,16 +623,25 @@ document.querySelector("#app").innerHTML = `
           </div>
         </div>
 
+        <!-- FULL TECH STACK GRID -->
         <div class="tech-cloud-box">
           <h3>Full Technical Stack</h3>
-          <div class="tech-cloud-wrap">
-            ${techCloud.map(tech => `<span class="cloud-pill">${tech}</span>`).join("")}
+          <p class="slide-sub" style="margin-bottom: 24px;">Core technologies, tools, databases, and platforms I work with.</p>
+          <div class="tech-stack-logo-grid">
+            ${techStackGrid.map(t => `
+              <div class="tech-stack-card">
+                <div class="tech-stack-icon">
+                  <img src="${t.iconUrl}" alt="${t.name}" loading="lazy" />
+                </div>
+                <span class="tech-stack-label">${t.name}</span>
+              </div>
+            `).join("")}
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT (DIRECT WHATSAPP INTEGRATION) -->
+    <!-- CONTACT -->
     <section id="contact" class="slide">
       <div class="container">
         <div class="slide-heading">
@@ -642,8 +664,8 @@ document.querySelector("#app").innerHTML = `
                   ${brandIcons.whatsapp}
                   <span>Chat on WhatsApp (+91-8217025255)</span>
                 </a>
-                <a href="mailto:abhibc.work@gmail.com" class="contact-line">
-                  ${svg('<rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>', 18)}
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=abhibc.work@gmail.com" target="_blank" rel="noreferrer" class="contact-line">
+                  ${brandIcons.gmail}
                   <span>abhibc.work@gmail.com</span>
                 </a>
                 <a href="tel:+918217025255" class="contact-line">
@@ -655,7 +677,7 @@ document.querySelector("#app").innerHTML = `
                   <span>linkedin.com/in/abhibc2005</span>
                 </a>
                 <a href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer" class="contact-line">
-                  ${svg('<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>', 18)}
+                  ${brandIcons.github}
                   <span>github.com/codewithabhi101</span>
                 </a>
                 <a href="https://www.instagram.com/_ii_abh_ii_/" target="_blank" rel="noreferrer" class="contact-line">
@@ -668,30 +690,42 @@ document.querySelector("#app").innerHTML = `
 
           <div class="contact-right">
             <div class="contact-form-box">
-              <h3>Send Message via WhatsApp</h3>
-              <p class="form-desc">Fill out the form below to send me a direct message on WhatsApp instantly.</p>
-              <form id="whatsappForm" class="contact-form">
+              <h3 id="formHeading">Send Message via WhatsApp</h3>
+              <p class="form-desc" id="formDesc">Fill out the form below to send me a direct message on WhatsApp instantly.</p>
+
+              <div class="channel-selector-tabs">
+                <button type="button" class="channel-tab-btn active" data-channel="whatsapp">
+                  ${brandIcons.whatsapp}
+                  <span>WhatsApp</span>
+                </button>
+                <button type="button" class="channel-tab-btn" data-channel="email">
+                  ${brandIcons.gmail}
+                  <span>Email / Gmail</span>
+                </button>
+              </div>
+
+              <form id="contactForm" class="contact-form">
                 <div class="form-row">
                   <div class="form-field">
                     <label>Full Name *</label>
-                    <input type="text" id="waName" placeholder="Your full name" required />
+                    <input type="text" id="contactName" name="name" placeholder="Your full name" required />
                   </div>
                   <div class="form-field">
                     <label>Email Address *</label>
-                    <input type="email" id="waEmail" placeholder="your.email@example.com" required />
+                    <input type="email" id="contactEmail" name="email" placeholder="your.email@example.com" required />
                   </div>
                 </div>
                 <div class="form-field">
                   <label>Subject *</label>
-                  <input type="text" id="waSubject" placeholder="Opportunity / Project Inquiry" required />
+                  <input type="text" id="contactSubject" name="subject" placeholder="Opportunity / Project Inquiry" required />
                 </div>
                 <div class="form-field">
                   <label>Message *</label>
-                  <textarea id="waMessage" rows="4" placeholder="Tell me about your role or project..." required></textarea>
+                  <textarea id="contactMessage" name="message" rows="4" placeholder="Tell me about your role or project..." required></textarea>
                 </div>
-                <button type="submit" class="btn primary full" style="display:flex;align-items:center;justify-content:center;gap:10px;">
-                  ${brandIcons.whatsapp}
-                  <span>Send via WhatsApp</span>
+                <button type="submit" id="submitBtn" class="btn primary full" style="display:flex;align-items:center;justify-content:center;gap:10px;">
+                  <span id="btnIcon">${brandIcons.whatsapp}</span>
+                  <span id="btnText">Send via WhatsApp</span>
                 </button>
               </form>
             </div>
@@ -709,26 +743,64 @@ document.querySelector("#app").innerHTML = `
 `;
 
 /* ══════════════════════════════════════════════
-   3. ANIMATIONS & WHATSAPP FORM HANDLER
+   3. CHANNEL SWITCHER & FORM SUBMIT HANDLER
    ══════════════════════════════════════════════ */
 
-// WhatsApp Form Submit Listener
-const waForm = document.getElementById("whatsappForm");
-if (waForm) {
-  waForm.addEventListener("submit", (e) => {
+let activeChannel = "whatsapp";
+
+const tabButtons = document.querySelectorAll(".channel-tab-btn");
+const formHeading = document.getElementById("formHeading");
+const formDesc = document.getElementById("formDesc");
+const btnIcon = document.getElementById("btnIcon");
+const btnText = document.getElementById("btnText");
+const contactForm = document.getElementById("contactForm");
+
+tabButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    tabButtons.forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+    activeChannel = btn.dataset.channel;
+
+    if (activeChannel === "whatsapp") {
+      formHeading.textContent = "Send Message via WhatsApp";
+      formDesc.textContent = "Fill out the form below to send me a direct message on WhatsApp instantly.";
+      btnIcon.innerHTML = brandIcons.whatsapp;
+      btnText.textContent = "Send via WhatsApp";
+    } else {
+      formHeading.textContent = "Send Message via Gmail";
+      formDesc.textContent = "Fill out the form below to open and compose an email directly in Gmail.";
+      btnIcon.innerHTML = brandIcons.gmail;
+      btnText.textContent = "Send via Gmail";
+    }
+  });
+});
+
+if (contactForm) {
+  contactForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    const name = document.getElementById("waName").value.trim();
-    const email = document.getElementById("waEmail").value.trim();
-    const subject = document.getElementById("waSubject").value.trim();
-    const message = document.getElementById("waMessage").value.trim();
+    const name = document.getElementById("contactName").value.trim();
+    const email = document.getElementById("contactEmail").value.trim();
+    const subject = document.getElementById("contactSubject").value.trim();
+    const message = document.getElementById("contactMessage").value.trim();
 
-    const formattedMessage = `Hi Abhi, I'm reaching out from your portfolio website!\n\n*Name:* ${name}\n*Email:* ${email}\n*Subject:* ${subject}\n*Message:* ${message}`;
-    const encodedText = encodeURIComponent(formattedMessage);
-    const whatsappUrl = `https://wa.me/918217025255?text=${encodedText}`;
-
-    window.open(whatsappUrl, "_blank");
+    if (activeChannel === "whatsapp") {
+      const formattedMessage = `Hi Abhi, I'm reaching out from your portfolio website!\n\n*Name:* ${name}\n*Email:* ${email}\n*Subject:* ${subject}\n*Message:* ${message}`;
+      const encodedText = encodeURIComponent(formattedMessage);
+      const whatsappUrl = `https://wa.me/918217025255?text=${encodedText}`;
+      window.open(whatsappUrl, "_blank");
+    } else {
+      const emailBody = `Hi Abhi,\n\nName: ${name}\nSender Email: ${email}\n\nMessage:\n${message}`;
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=abhibc.work@gmail.com&su=${encodeURIComponent(
+        subject + " - " + name
+      )}&body=${encodeURIComponent(emailBody)}`;
+      window.open(gmailUrl, "_blank");
+    }
   });
 }
+
+/* ══════════════════════════════════════════════
+   4. SCROLL OBSERVERS
+   ══════════════════════════════════════════════ */
 
 const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll(".nav-item");
@@ -745,20 +817,3 @@ window.addEventListener("scroll", () => {
     a.classList.toggle("active", a.getAttribute("href") === `#${activeId}`);
   });
 });
-
-const skillRows = document.querySelectorAll(".skill-item-row");
-const observer = new IntersectionObserver(
-  (entries) => {
-    if (entries[0].isIntersecting) {
-      skillRows.forEach((row) => {
-        const fill = row.querySelector(".skill-progress-bar");
-        if (fill) fill.style.width = row.dataset.p + "%";
-      });
-      observer.disconnect();
-    }
-  },
-  { threshold: 0.2 }
-);
-
-const skillsEl = document.getElementById("skills");
-if (skillsEl) observer.observe(skillsEl);
