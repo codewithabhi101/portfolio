@@ -17,7 +17,8 @@ const brandIcons = {
   git: `<svg width="22" height="22" viewBox="0 0 24 24"><path fill="#F05032" d="M21.6 10.8l-8.4-8.4a1.8 1.8 0 00-2.5 0L8.4 4.7l3.2 3.2a2.1 2.1 0 012.7 2.7l3.1 3.1a2.1 2.1 0 11-1.3 1.3l-2.9-2.9v4.3a2.1 2.1 0 11-1.8 0v-4.5a2.1 2.1 0 01-1.2-2.7L7 6.1 2.4 10.8a1.8 1.8 0 000 2.5l8.4 8.4a1.8 1.8 0 002.5 0l8.3-8.4a1.8 1.8 0 000-2.5z"/></svg>`,
   aws: `<svg width="22" height="22" viewBox="0 0 24 24"><path fill="#FF9900" d="M18.8 15.2c-2.3 1.7-5.5 2.6-8.4 2.6-4.1 0-7.7-1.5-10.4-4-.2-.2 0-.5.3-.4 3 1.7 6.6 2.7 10.4 2.7 2.6 0 5.4-.7 7.9-2.1.4-.3.7.2.2.6z"/><path fill="#FF9900" d="M19.9 14c-.3-.4-1.8-.2-2.5-.1-.2 0-.3-.2-.1-.3.9-.7 2.4-.5 2.7-.2.3.4.1 1.9-.8 2.6-.2.1-.3 0-.3-.2.2-.6.7-1.4 1-1.8z"/></svg>`,
   docker: `<svg width="22" height="22" viewBox="0 0 24 24" fill="#2496ED"><path d="M13 10.5h2v2h-2zm-3 0h2v2h-2zm-3 0h2v2H7zm6-3h2v2h-2zm-3 0h2v2h-2zm-3 0h2v2H7zm14.5 4.5c-.3-.2-1.4-.4-2.3.2-.2-1.3-.9-2-1.1-2.2l-.4.3c.3.9.1 2.1-.2 2.8-.7.2-2 .3-2.5-.2l-.3.3c.4.6 1.1.9 2 .9-1.2 3.4-3.8 4.4-7.7 4.4H2.5C2.2 19 4 21 8.5 21c6.5 0 11-4.2 11.5-9.5h1.5z"/></svg>`,
-  jest: `<svg width="22" height="22" viewBox="0 0 24 24"><path fill="#C21325" d="M12 2a9 9 0 00-9 9c0 4.2 2.8 7.7 6.7 8.7L12 22l2.3-2.3c3.9-1 6.7-4.5 6.7-8.7a9 9 0 00-9-9zm-2.5 9a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm5 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"/></svg>`
+  jest: `<svg width="22" height="22" viewBox="0 0 24 24"><path fill="#C21325" d="M12 2a9 9 0 00-9 9c0 4.2 2.8 7.7 6.7 8.7L12 22l2.3-2.3c3.9-1 6.7-4.5 6.7-8.7a9 9 0 00-9-9zm-2.5 9a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm5 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"/></svg>`,
+  whatsapp: `<svg width="20" height="20" viewBox="0 0 24 24" fill="#25D366"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>`
 };
 
 const skillsColumns = {
@@ -69,7 +70,7 @@ const projects = [
   {
     badge: "AI & GraphQL Engine",
     title: "AI Agent Workflow Builder",
-    img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+    img: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
     desc: "Visual agent workflow execution platform with a 7-table multi-tenant schema in PostgreSQL and real-time GraphQL APIs via Hasura on Nhost.",
     bullets: [
       "7-table multi-tenant schema (organizations, workflows, steps, triggers, runs)",
@@ -184,7 +185,6 @@ const education = [
   }
 ];
 
-// Verified Certifications with Direct Verification Links
 const certifications = [
   {
     title: "Developing Back-End Apps with Node.js and MongoDB",
@@ -234,7 +234,6 @@ const svg = (path, size = 20) =>
    ══════════════════════════════════════════════ */
 
 document.querySelector("#app").innerHTML = `
-  <!-- NAVBAR -->
   <header class="navbar">
     <div class="container nav-wrap">
       <a href="#home" class="brand">
@@ -260,15 +259,14 @@ document.querySelector("#app").innerHTML = `
       <div class="container hero-grid">
         <div class="hero-left">
           <div class="status-pill">
-            <span class="status-dot"></span> Available for Full-Stack Roles & Internships
+            <span class="status-dot"></span> Available for Frontend & Full-Stack Roles
           </div>
           <h1 class="hero-title">
             I'm <span class="highlight">Abhi B C</span><br />
-            Full-Stack Software Engineer
+            Frontend-Focused Full-Stack Engineer
           </h1>
           <p class="hero-desc">
-            Designing resilient web and mobile applications end-to-end.
-            Specializing in offline-first mobile sync engines, Spring Boot backend systems, and multi-tenant GraphQL architectures.
+            Building fast, responsive interfaces with React, Next.js, and React Native — backed by full-stack experience across Spring Boot, Node.js, and GraphQL. I care about clean component architecture, smooth UX, and shipping products end-to-end.
           </p>
           <div class="hero-actions">
             <a href="#projects" class="btn primary">View My Work &rarr;</a>
@@ -313,13 +311,10 @@ document.querySelector("#app").innerHTML = `
           <div class="about-text-col">
             <h3>Full-stack engineer building resilient web and mobile systems.</h3>
             <p>
-              <strong>Engineering is more than writing code; it's about solving real architectural challenges.</strong>
-              I design and deploy software solutions including an offline-first notes platform with a custom conflict-resolution sync engine,
-              a multi-tenant GraphQL system on Hasura with PostgreSQL row-level security, and a Spring Boot 3 enterprise REST platform.
+              Engineering is more than writing code; it's about solving real architectural challenges. I design and deploy software solutions including an offline-first notes platform with a custom conflict-resolution sync engine, a multi-tenant GraphQL system on Hasura with PostgreSQL row-level security, and a Spring Boot 3 enterprise REST platform.
             </p>
             <p>
-              Final-year Information Science & Engineering student at AIET, Moodbidri (CGPA: 7.5).
-              Experienced across Next.js, React Native, Java/Spring Boot, Node.js, and containerized Docker environments.
+              Final-year Information Science & Engineering student at AIET, Moodbidri (CGPA: 7.5). Experienced across Next.js, React Native, Java/Spring Boot, Node.js, and containerized Docker environments.
             </p>
             <div class="about-actions">
               <a href="/ABHI_RESUME.pdf" download class="btn primary">&#8659; Download CV</a>
@@ -624,7 +619,7 @@ document.querySelector("#app").innerHTML = `
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- CONTACT (DIRECT WHATSAPP INTEGRATION) -->
     <section id="contact" class="slide">
       <div class="container">
         <div class="slide-heading">
@@ -643,6 +638,10 @@ document.querySelector("#app").innerHTML = `
               </div>
 
               <div class="contact-items">
+                <a href="https://wa.me/918217025255?text=Hi%20Abhi,%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" rel="noreferrer" class="contact-line">
+                  ${brandIcons.whatsapp}
+                  <span>Chat on WhatsApp (+91-8217025255)</span>
+                </a>
                 <a href="mailto:abhibc.work@gmail.com" class="contact-line">
                   ${svg('<rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>', 18)}
                   <span>abhibc.work@gmail.com</span>
@@ -669,28 +668,31 @@ document.querySelector("#app").innerHTML = `
 
           <div class="contact-right">
             <div class="contact-form-box">
-              <h3>Send Message</h3>
-              <p class="form-desc">Fill out the form below and I will get back to you promptly.</p>
-              <form action="https://formspree.io/f/mnjrlzjl" method="POST" class="contact-form">
+              <h3>Send Message via WhatsApp</h3>
+              <p class="form-desc">Fill out the form below to send me a direct message on WhatsApp instantly.</p>
+              <form id="whatsappForm" class="contact-form">
                 <div class="form-row">
                   <div class="form-field">
                     <label>Full Name *</label>
-                    <input type="text" name="name" placeholder="Your full name" required />
+                    <input type="text" id="waName" placeholder="Your full name" required />
                   </div>
                   <div class="form-field">
                     <label>Email Address *</label>
-                    <input type="email" name="email" placeholder="your.email@example.com" required />
+                    <input type="email" id="waEmail" placeholder="your.email@example.com" required />
                   </div>
                 </div>
                 <div class="form-field">
                   <label>Subject *</label>
-                  <input type="text" name="subject" placeholder="Opportunity / Project Inquiry" required />
+                  <input type="text" id="waSubject" placeholder="Opportunity / Project Inquiry" required />
                 </div>
                 <div class="form-field">
                   <label>Message *</label>
-                  <textarea name="message" rows="4" placeholder="Tell me about your role or project..." required></textarea>
+                  <textarea id="waMessage" rows="4" placeholder="Tell me about your role or project..." required></textarea>
                 </div>
-                <button type="submit" class="btn primary full">Send Message</button>
+                <button type="submit" class="btn primary full" style="display:flex;align-items:center;justify-content:center;gap:10px;">
+                  ${brandIcons.whatsapp}
+                  <span>Send via WhatsApp</span>
+                </button>
               </form>
             </div>
           </div>
@@ -707,8 +709,26 @@ document.querySelector("#app").innerHTML = `
 `;
 
 /* ══════════════════════════════════════════════
-   3. ANIMATIONS & OBSERVERS
+   3. ANIMATIONS & WHATSAPP FORM HANDLER
    ══════════════════════════════════════════════ */
+
+// WhatsApp Form Submit Listener
+const waForm = document.getElementById("whatsappForm");
+if (waForm) {
+  waForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const name = document.getElementById("waName").value.trim();
+    const email = document.getElementById("waEmail").value.trim();
+    const subject = document.getElementById("waSubject").value.trim();
+    const message = document.getElementById("waMessage").value.trim();
+
+    const formattedMessage = `Hi Abhi, I'm reaching out from your portfolio website!\n\n*Name:* ${name}\n*Email:* ${email}\n*Subject:* ${subject}\n*Message:* ${message}`;
+    const encodedText = encodeURIComponent(formattedMessage);
+    const whatsappUrl = `https://wa.me/918217025255?text=${encodedText}`;
+
+    window.open(whatsappUrl, "_blank");
+  });
+}
 
 const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll(".nav-item");
