@@ -4,7 +4,6 @@ import "./style.css";
    1. BRAND ICONS & DATA
    ══════════════════════════════════════════════ */
 
-// Original Brand Colored SVG Icons
 const brandIcons = {
   react: `<svg width="22" height="22" viewBox="-11.5 -10.23174 23 20.46348"><circle cx="0" cy="0" r="2.05" fill="#61dafb"/><g stroke="#61dafb" stroke-width="1" fill="none"><ellipse rx="11" ry="4.2"/><ellipse rx="11" ry="4.2" transform="rotate(60)"/><ellipse rx="11" ry="4.2" transform="rotate(120)"/></g></svg>`,
   ts: `<svg width="22" height="22" viewBox="0 0 128 128"><path fill="#3178C6" d="M0 0h128v128H0z"/><path fill="#FFF" d="M37.8 77.1v31.4H24.3V77.1H8.6V65.8h44.9v11.3H37.8zm63.4 12.3c0 3.7-1.1 6.8-3.4 9.3s-5.6 4.3-10 5.4-9.2 1.6-14.4 1.6c-5.4 0-10.4-.9-15.1-2.6v-12c4.4 2.3 8.8 4 13.1 5.1s8.4 1.6 12.2 1.6c3.2 0 5.7-.6 7.4-1.7s2.6-2.8 2.6-5.1c0-1.8-.7-3.3-2.1-4.5s-3.7-2.4-7-3.7l-9.6-3.8c-5.4-2.1-9.4-4.7-11.9-7.9s-3.7-7.2-3.7-12c0-3.6 1.1-6.7 3.3-9.3s5.4-4.5 9.5-5.7 8.9-1.8 14.3-1.8c4.6 0 9.1.7 13.3 2s8.2 3.1 12 5.5l-5.6 10.4c-3.6-2-7-3.5-10.3-4.4s-6.5-1.4-9.6-1.4c-3.1 0-5.5.6-7.1 1.7s-2.4 2.6-2.4 4.5c0 1.6.6 2.9 1.9 4s3.3 2.1 6.1 3.2l10.1 4c5.6 2.2 9.7 4.9 12.3 8.1s3.9 7.3 3.9 12.3z"/></svg>`,
@@ -12,7 +11,7 @@ const brandIcons = {
   tailwind: `<svg width="22" height="22" viewBox="0 0 24 24" fill="#38BDF8"><path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"/></svg>`,
   html: `<svg width="22" height="22" viewBox="0 0 512 512"><path fill="#E34F26" d="M71 460L30 0h452l-41 460-185 52z"/><path fill="#EF652A" d="M256 472l149-41 35-394H256z"/><path fill="#EBEBEB" d="M256 208h-74l-5-57h79V95H113l15 170h128zm0 147l-63-17-4-45h-56l7 89 116 32z"/><path fill="#FFF" d="M256 208v-56h75l7-57H256V38h143l-15 170zm0 147v57l116-32 11-125h-56l-6 83z"/></svg>`,
   node: `<svg width="22" height="22" viewBox="0 0 32 32"><path fill="#339933" d="M16 2.5l12.1 7v14l-12.1 7-12.1-7v-14L16 2.5zm0 2.3L5.9 10.6v11.8L16 28.2l10.1-5.8V10.6L16 4.8zm-1 6.2v10h2V11h-2z"/></svg>`,
-  express: `<svg width="22" height="22" viewBox="0 0 50 50"><text x="5" y="35" font-family="system-ui, sans-serif" font-size="34" font-weight="900" fill="#524639">ex</text></svg>`,
+  express: `<svg width="22" height="22" viewBox="0 0 50 50"><text x="4" y="36" font-family="system-ui, sans-serif" font-size="34" font-weight="900" fill="#171614">ex</text></svg>`,
   mysql: `<svg width="22" height="22" viewBox="0 0 24 24" fill="#00758F"><path d="M12 3C6.48 3 2 7.48 2 13c0 3.1 1.45 5.86 3.72 7.67l1.24-1.57C5.22 17.72 4 15.51 4 13c0-4.41 3.59-8 8-8s8 3.59 8 8c0 2.51-1.22 4.72-2.96 6.1l1.24 1.57C20.55 18.86 22 16.1 22 13c0-5.52-4.48-10-10-10z"/></svg>`,
   mongo: `<svg width="22" height="22" viewBox="0 0 24 24"><path fill="#47A248" d="M12 1.5c-.3 0-.6.1-.8.3C10.5 2.5 5 8.1 5 14.5c0 4.1 3.1 7.5 7 8 3.9-.5 7-3.9 7-8 0-6.4-5.5-12-6.2-12.7-.2-.2-.5-.3-.8-.3zm0 2.2c1.2 1.5 5 6.6 5 10.8 0 3-2.2 5.5-5 6-2.8-.5-5-3-5-6 0-4.2 3.8-9.3 5-10.8z"/><path fill="#47A248" d="M12 6.5v14c2.2-.5 4-2.5 4-5 0-3.5-3.3-7.7-4-9z"/></svg>`,
   git: `<svg width="22" height="22" viewBox="0 0 24 24"><path fill="#F05032" d="M21.6 10.8l-8.4-8.4a1.8 1.8 0 00-2.5 0L8.4 4.7l3.2 3.2a2.1 2.1 0 012.7 2.7l3.1 3.1a2.1 2.1 0 11-1.3 1.3l-2.9-2.9v4.3a2.1 2.1 0 11-1.8 0v-4.5a2.1 2.1 0 01-1.2-2.7L7 6.1 2.4 10.8a1.8 1.8 0 000 2.5l8.4 8.4a1.8 1.8 0 002.5 0l8.3-8.4a1.8 1.8 0 000-2.5z"/></svg>`,
@@ -21,7 +20,6 @@ const brandIcons = {
   jest: `<svg width="22" height="22" viewBox="0 0 24 24"><path fill="#C21325" d="M12 2a9 9 0 00-9 9c0 4.2 2.8 7.7 6.7 8.7L12 22l2.3-2.3c3.9-1 6.7-4.5 6.7-8.7a9 9 0 00-9-9zm-2.5 9a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm5 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"/></svg>`
 };
 
-// 3-Column Skills Categorization
 const skillsColumns = {
   frontend: {
     title: "Frontend Development",
@@ -53,7 +51,6 @@ const skillsColumns = {
   }
 };
 
-// Clean Projects Array with Working Visuals
 const projects = [
   {
     badge: "Enterprise Platform",
@@ -127,7 +124,6 @@ const projects = [
   }
 ];
 
-// Experience Timeline
 const experiences = [
   {
     year: "2026",
@@ -167,7 +163,6 @@ const experiences = [
   }
 ];
 
-// Education
 const education = [
   {
     degree: "B.E. in Information Science & Engineering",
@@ -189,23 +184,23 @@ const education = [
   }
 ];
 
-// Certifications
+// Verified Certifications with Direct Verification Links
 const certifications = [
   {
     title: "Developing Back-End Apps with Node.js and MongoDB",
     issuer: "IBM · Coursera",
-    link: "https://coursera.org",
+    link: "https://coursera.org/verify/IQ5M1D58FPCR",
     hasLiveLink: true,
     tags: ["Node.js", "Express.js", "MongoDB", "Mongoose"],
-    id: "IBM-DB-2024"
+    id: "IQ5M1D58FPCR"
   },
   {
     title: "Programming with JavaScript",
     issuer: "Meta · Coursera",
-    link: "https://coursera.org",
+    link: "https://coursera.org/verify/FATWWHTD06IL",
     hasLiveLink: true,
     tags: ["JavaScript", "ES6+", "Unit Testing", "Jest"],
-    id: "META-JS-2024"
+    id: "FATWWHTD06IL"
   },
   {
     title: "Java Full Stack Development",
@@ -661,7 +656,7 @@ document.querySelector("#app").innerHTML = `
                   <span>linkedin.com/in/abhibc2005</span>
                 </a>
                 <a href="https://github.com/codewithabhi101" target="_blank" rel="noreferrer" class="contact-line">
-                  ${svg('<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>', 16)}
+                  ${svg('<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>', 18)}
                   <span>github.com/codewithabhi101</span>
                 </a>
                 <a href="https://www.instagram.com/_ii_abh_ii_/" target="_blank" rel="noreferrer" class="contact-line">
