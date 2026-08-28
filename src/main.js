@@ -9,25 +9,25 @@ const brandIcons = {
   react: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="22" height="22" alt="React" />`,
   ts: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="22" height="22" alt="TypeScript" />`,
   next: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" width="22" height="22" alt="Next.js" />`,
-  tailwind: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" width="22" height="22" alt="Tailwind CSS" />`,
   html: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="22" height="22" alt="HTML5" />`,
   java: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="22" height="22" alt="Java" />`,
   sql: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" width="22" height="22" alt="SQL" />`,
   node: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" width="22" height="22" alt="Node.js" />`,
   express: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" width="22" height="22" alt="Express.js" />`,
+  postgresql: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" width="22" height="22" alt="PostgreSQL" />`,
   mysql: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" width="22" height="22" alt="MySQL" />`,
   mongo: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" width="22" height="22" alt="MongoDB" />`,
   vscode: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" width="22" height="22" alt="VS Code" />`,
   git: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="22" height="22" alt="Git" />`,
   github: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="22" height="22" alt="GitHub" />`,
   docker: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" width="22" height="22" alt="Docker" />`,
-  aws: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="22" height="22" alt="AWS" />`,
-  jest: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg" width="22" height="22" alt="Jest" />`,
+  postman: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" width="22" height="22" alt="Postman" />`,
+  vercel: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" width="22" height="22" alt="Vercel" />`,
   whatsapp: `<img src="https://cdn.simpleicons.org/whatsapp/25D366" width="22" height="22" alt="WhatsApp" />`,
-  gmail: `<img src="https://cdn.simpleicons.org/gmail/EA4335" width="22" height="22" alt="Gmail" />`
+ gmail: `<img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos@main/logos/google-gmail.svg" width="22" height="22" alt="Gmail" />`
 };
 
-/* ── 6 ITEMS PER COLUMN (EQUAL LENGTH) ── */
+/* ── 5 BALANCED ITEMS PER COLUMN (EQUAL LENGTH) ── */
 const skillsColumns = {
   frontend: {
     title: "Frontend Development",
@@ -36,7 +36,6 @@ const skillsColumns = {
       { name: "React.js", icon: brandIcons.react },
       { name: "TypeScript", icon: brandIcons.ts },
       { name: "Next.js", icon: brandIcons.next },
-      { name: "Tailwind CSS", icon: brandIcons.tailwind },
       { name: "HTML5 / CSS3", icon: brandIcons.html }
     ]
   },
@@ -47,8 +46,7 @@ const skillsColumns = {
       { name: "SQL", icon: brandIcons.sql },
       { name: "Node.js", icon: brandIcons.node },
       { name: "Express.js", icon: brandIcons.express },
-      { name: "MySQL", icon: brandIcons.mysql },
-      { name: "MongoDB", icon: brandIcons.mongo }
+      { name: "PostgreSQL", icon: brandIcons.postgresql }
     ]
   },
   tools: {
@@ -58,8 +56,7 @@ const skillsColumns = {
       { name: "Git", icon: brandIcons.git },
       { name: "GitHub", icon: brandIcons.github },
       { name: "Docker", icon: brandIcons.docker },
-      { name: "AWS", icon: brandIcons.aws },
-      { name: "Jest / Testing", icon: brandIcons.jest }
+      { name: "Postman", icon: brandIcons.postman }
     ]
   }
 };
@@ -160,7 +157,7 @@ const experiences = [
       "Developed an institutional web platform for an Agriculture College featuring scalable component systems.",
       "Configured automated CI/CD pipelines, containerization with Docker Compose, and cloud deployments."
     ],
-    tags: ["TypeScript", "Node.js", "Express.js", "MongoDB", "MySQL", "Tailwind CSS"]
+    tags: ["TypeScript", "Node.js", "Express.js", "MongoDB", "MySQL", "Docker"]
   },
   {
     year: "2023",
@@ -211,7 +208,7 @@ const certifications = [
     issuer: "Meta · Coursera",
     link: "https://coursera.org/verify/FATWWHTD06IL",
     hasLiveLink: true,
-    tags: ["JavaScript", "ES6+", "Unit Testing", "Jest"],
+    tags: ["JavaScript", "ES6+", "Unit Testing"],
     id: "FATWWHTD06IL"
   },
   {
@@ -225,13 +222,11 @@ const certifications = [
   }
 ];
 
-// Full Tech Stack with Official & Accurate Logos
 const techStackGrid = [
   { name: "JavaScript", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
   { name: "TypeScript", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" },
   { name: "Java", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" },
   { name: "SQL", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" },
-  { name: "AWS", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
   { name: "VS Code", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" },
   { name: "React", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
   { name: "React Native", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
@@ -250,6 +245,7 @@ const techStackGrid = [
   { name: "JWT Auth", iconUrl: "https://cdn.simpleicons.org/jsonwebtokens/D63AFF" },
   { name: "OAuth 2.0", iconUrl: "https://cdn.simpleicons.org/auth0/EB5424" },
   { name: "Docker", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" },
+  { name: "Postman", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" },
   { name: "Git", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" },
   { name: "GitHub", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" },
   { name: "Vercel", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" },
@@ -487,7 +483,7 @@ document.querySelector("#app").innerHTML = `
       <div class="container">
         <div class="slide-heading">
           <h2>My <span class="highlight">Skills</span></h2>
-          <p class="slide-sub">Here's a comprehensive overview of my technical expertise and proficiency levels across various technologies and tools.</p>
+          <p class="slide-sub">Here's a comprehensive overview of my technical expertise across frontend, backend architectures, and tooling.</p>
           <div class="heading-bar"></div>
         </div>
 
