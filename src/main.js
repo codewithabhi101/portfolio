@@ -1,33 +1,32 @@
 import "./style.css";
 
 /* ══════════════════════════════════════════════
-   1. BRAND ICONS & DATA (Accurate Devicon / Simple Icons CDN)
+   1. BRAND ICONS & DATA
    ══════════════════════════════════════════════ */
 
 const brandIcons = {
-  js: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="22" height="22" alt="JavaScript" />`,
-  react: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="22" height="22" alt="React" />`,
-  ts: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="22" height="22" alt="TypeScript" />`,
-  next: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" width="22" height="22" alt="Next.js" />`,
-  html: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="22" height="22" alt="HTML5" />`,
-  java: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="22" height="22" alt="Java" />`,
-  sql: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" width="22" height="22" alt="SQL" />`,
-  node: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" width="22" height="22" alt="Node.js" />`,
-  express: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" width="22" height="22" alt="Express.js" />`,
-  postgresql: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" width="22" height="22" alt="PostgreSQL" />`,
-  mysql: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" width="22" height="22" alt="MySQL" />`,
-  mongo: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" width="22" height="22" alt="MongoDB" />`,
-  vscode: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" width="22" height="22" alt="VS Code" />`,
-  git: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="22" height="22" alt="Git" />`,
-  github: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="22" height="22" alt="GitHub" />`,
-  docker: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" width="22" height="22" alt="Docker" />`,
-  postman: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" width="22" height="22" alt="Postman" />`,
-  vercel: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" width="22" height="22" alt="Vercel" />`,
-  whatsapp: `<img src="https://cdn.simpleicons.org/whatsapp/25D366" width="22" height="22" alt="WhatsApp" />`,
- gmail: `<img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos@main/logos/google-gmail.svg" width="22" height="22" alt="Gmail" />`
+  js: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="22" height="22" alt="JavaScript" loading="lazy" />`,
+  react: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="22" height="22" alt="React" loading="lazy" />`,
+  ts: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="22" height="22" alt="TypeScript" loading="lazy" />`,
+  next: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" width="22" height="22" alt="Next.js" loading="lazy" />`,
+  html: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="22" height="22" alt="HTML5" loading="lazy" />`,
+  java: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="22" height="22" alt="Java" loading="lazy" />`,
+  sql: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" width="22" height="22" alt="SQL" loading="lazy" />`,
+  node: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" width="22" height="22" alt="Node.js" loading="lazy" />`,
+  express: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" width="22" height="22" alt="Express.js" loading="lazy" />`,
+  postgresql: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" width="22" height="22" alt="PostgreSQL" loading="lazy" />`,
+  mysql: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" width="22" height="22" alt="MySQL" loading="lazy" />`,
+  mongo: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" width="22" height="22" alt="MongoDB" loading="lazy" />`,
+  vscode: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" width="22" height="22" alt="VS Code" loading="lazy" />`,
+  git: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="22" height="22" alt="Git" loading="lazy" />`,
+  github: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="22" height="22" alt="GitHub" loading="lazy" />`,
+  docker: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" width="22" height="22" alt="Docker" loading="lazy" />`,
+  postman: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" width="22" height="22" alt="Postman" loading="lazy" />`,
+  vercel: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" width="22" height="22" alt="Vercel" loading="lazy" />`,
+  whatsapp: `<img src="https://cdn.simpleicons.org/whatsapp/25D366" width="22" height="22" alt="WhatsApp" loading="lazy" />`,
+  gmail: `<img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos@main/logos/google-gmail.svg" width="22" height="22" alt="Gmail" loading="lazy" />`
 };
 
-/* ── 5 BALANCED ITEMS PER COLUMN (EQUAL LENGTH) ── */
 const skillsColumns = {
   frontend: {
     title: "Frontend Development",
@@ -283,6 +282,28 @@ document.querySelector("#app").innerHTML = `
         <a class="nav-item" href="#contact">Contact</a>
       </nav>
       <a href="#contact" class="btn-nav">Let's Talk</a>
+
+      <button type="button" class="nav-toggle-btn" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <nav class="mobile-nav-links">
+        <a class="mobile-nav-item active" href="#home">Home</a>
+        <a class="mobile-nav-item" href="#about">About</a>
+        <a class="mobile-nav-item" href="#experience">Experience</a>
+        <a class="mobile-nav-item" href="#projects">Projects</a>
+        <a class="mobile-nav-item" href="#skills">Skills</a>
+        <a class="mobile-nav-item" href="#credentials">Credentials</a>
+        <a class="mobile-nav-item" href="#contact">Contact</a>
+      </nav>
+      <div class="mobile-menu-footer">
+        <a href="/ABHI_RESUME.pdf" download class="btn outline full">&#8659; Download Resume</a>
+        <a href="#contact" class="btn primary full mobile-action-btn">Let's Talk &rarr;</a>
+      </div>
     </div>
   </header>
 
@@ -325,7 +346,7 @@ document.querySelector("#app").innerHTML = `
           <div class="hero-avatar-wrap">
             <div class="avatar-glow"></div>
             <div class="avatar-ring">
-              <img src="/profile.jpg" alt="Abhi B C" onerror="this.parentElement.innerHTML='<div class=\\'avatar-placeholder\\'>&lt;/&gt;</div>'" />
+              <img src="/profile.jpg" alt="Abhi B C" loading="eager" onerror="this.parentElement.innerHTML='<div class=\\'avatar-placeholder\\'>&lt;/&gt;</div>'" />
             </div>
           </div>
         </div>
@@ -449,7 +470,7 @@ document.querySelector("#app").innerHTML = `
           ${projects.map(p => `
             <article class="project-card">
               <div class="project-img-wrap">
-                <img src="${p.img}" alt="${p.title}" />
+                <img src="${p.img}" alt="${p.title}" loading="lazy" />
                 <span class="project-featured-badge">${p.badge}</span>
               </div>
               <div class="project-body">
@@ -466,7 +487,7 @@ document.querySelector("#app").innerHTML = `
                   </div>
                   <div class="project-actions">
                     <a href="${p.live}" target="_blank" rel="noreferrer" class="btn primary-sm">Live Demo &#8599;</a>
-                    <a href="${p.github}" target="_blank" rel="noreferrer" class="btn icon-sm" title="View Source on GitHub">
+                    <a href="${p.github}" target="_blank" rel="noreferrer" class="btn icon-sm" aria-label="View source on GitHub" title="View Source on GitHub">
                       ${svg('<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>', 16)}
                     </a>
                   </div>
@@ -483,7 +504,7 @@ document.querySelector("#app").innerHTML = `
       <div class="container">
         <div class="slide-heading">
           <h2>My <span class="highlight">Skills</span></h2>
-          <p class="slide-sub">Here's a comprehensive overview of my technical expertise across frontend, backend architectures, and tooling.</p>
+          <p class="slide-sub">A comprehensive overview of technical expertise across frontend, backend, and tooling.</p>
           <div class="heading-bar"></div>
         </div>
 
@@ -703,20 +724,20 @@ document.querySelector("#app").innerHTML = `
               <form id="contactForm" class="contact-form">
                 <div class="form-row">
                   <div class="form-field">
-                    <label>Full Name *</label>
+                    <label for="contactName">Full Name *</label>
                     <input type="text" id="contactName" name="name" placeholder="Your full name" required />
                   </div>
                   <div class="form-field">
-                    <label>Email Address *</label>
+                    <label for="contactEmail">Email Address *</label>
                     <input type="email" id="contactEmail" name="email" placeholder="your.email@example.com" required />
                   </div>
                 </div>
                 <div class="form-field">
-                  <label>Subject *</label>
+                  <label for="contactSubject">Subject *</label>
                   <input type="text" id="contactSubject" name="subject" placeholder="Opportunity / Project Inquiry" required />
                 </div>
                 <div class="form-field">
-                  <label>Message *</label>
+                  <label for="contactMessage">Message *</label>
                   <textarea id="contactMessage" name="message" rows="4" placeholder="Tell me about your role or project..." required></textarea>
                 </div>
                 <button type="submit" id="submitBtn" class="btn primary full" style="display:flex;align-items:center;justify-content:center;gap:10px;">
@@ -739,7 +760,48 @@ document.querySelector("#app").innerHTML = `
 `;
 
 /* ══════════════════════════════════════════════
-   3. CHANNEL SWITCHER & FORM SUBMIT HANDLER
+   3. MOBILE NAVIGATION DRAWER TOGGLE
+   ══════════════════════════════════════════════ */
+
+const navToggle = document.getElementById("navToggle");
+const mobileMenu = document.getElementById("mobileMenu");
+const mobileLinks = document.querySelectorAll(".mobile-nav-item, .mobile-action-btn");
+
+const closeMobileMenu = () => {
+  navToggle.classList.remove("open");
+  navToggle.setAttribute("aria-expanded", "false");
+  mobileMenu.classList.remove("open");
+  mobileMenu.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+};
+
+const openMobileMenu = () => {
+  navToggle.classList.add("open");
+  navToggle.setAttribute("aria-expanded", "true");
+  mobileMenu.classList.add("open");
+  mobileMenu.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+};
+
+if (navToggle && mobileMenu) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = mobileMenu.classList.contains("open");
+    if (isOpen) {
+      closeMobileMenu();
+    } else {
+      openMobileMenu();
+    }
+  });
+
+  mobileLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      closeMobileMenu();
+    });
+  });
+}
+
+/* ══════════════════════════════════════════════
+   4. CHANNEL SWITCHER & FORM SUBMIT HANDLER
    ══════════════════════════════════════════════ */
 
 let activeChannel = "whatsapp";
@@ -795,21 +857,41 @@ if (contactForm) {
 }
 
 /* ══════════════════════════════════════════════
-   4. SCROLL OBSERVERS
+   5. SCROLL OBSERVER & ACTIVE LINK SYNC
    ══════════════════════════════════════════════ */
 
 const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll(".nav-item");
+const mobileNavItems = document.querySelectorAll(".mobile-nav-item");
 
-window.addEventListener("scroll", () => {
+const updateActiveSection = () => {
   let activeId = "";
+  const scrollPosition = window.scrollY + 160;
+
   sections.forEach((sec) => {
-    if (window.scrollY >= sec.offsetTop - 140) {
+    const top = sec.offsetTop;
+    const height = sec.offsetHeight;
+    if (scrollPosition >= top && scrollPosition < top + height) {
       activeId = sec.getAttribute("id");
     }
   });
 
+  if (!activeId && window.scrollY < 200) {
+    activeId = "home";
+  }
+
   navLinks.forEach((a) => {
     a.classList.toggle("active", a.getAttribute("href") === `#${activeId}`);
   });
+
+  mobileNavItems.forEach((a) => {
+    a.classList.toggle("active", a.getAttribute("href") === `#${activeId}`);
+  });
+};
+
+window.addEventListener("scroll", updateActiveSection, { passive: true });
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 992 && mobileMenu.classList.contains("open")) {
+    closeMobileMenu();
+  }
 });
