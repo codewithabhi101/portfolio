@@ -164,7 +164,7 @@ const experiences = [
     company: "AIET, Mijar - Moodbidri",
     period: "2023 – Present (Final Year)",
     points: [
-      "Pursuing Bachelor of Engineering with an academic CGPA of 7.5.",
+      "Pursuing Bachelor of Engineering with an academic CGPA of 8.5.",
       "Specializing in System Design, Offline-First Architecture, and Database Modeling.",
       "Completed backend engineering and database development certifications from IBM and Meta."
     ],
@@ -177,7 +177,7 @@ const education = [
     degree: "B.E. in Information Science & Engineering",
     school: "AIET, Mijar - Moodbidri",
     period: "2023 – Present",
-    score: "CGPA: 7.5"
+    score: "CGPA: 8.5"
   },
   {
     degree: "Pre-University Course (PUC)",
@@ -332,7 +332,7 @@ document.querySelector("#app").innerHTML = `
               <span class="counter-label">Built Projects</span>
             </div>
             <div class="counter-item">
-              <span class="counter-num">7.5</span>
+              <span class="counter-num">8.5</span>
               <span class="counter-label">Engineering CGPA</span>
             </div>
             <div class="counter-item">
@@ -368,7 +368,7 @@ document.querySelector("#app").innerHTML = `
               Engineering is more than writing code; it's about solving real architectural challenges. I design and deploy software solutions including an offline-first notes platform with a custom conflict-resolution sync engine, a multi-tenant GraphQL system on Hasura with PostgreSQL row-level security, and a Spring Boot 3 enterprise REST platform.
             </p>
             <p>
-              Final-year Information Science & Engineering student at AIET, Moodbidri (CGPA: 7.5). Experienced across Next.js, React Native, Java/Spring Boot, Node.js, and containerized Docker environments.
+              Final-year Information Science & Engineering student at AIET, Moodbidri (CGPA: 8.5). Experienced across Next.js, React Native, Java/Spring Boot, Node.js, and containerized Docker environments.
             </p>
             <div class="about-actions">
               <a href="/ABHI_RESUME.pdf" download class="btn primary">&#8659; Download CV</a>
@@ -446,7 +446,7 @@ document.querySelector("#app").innerHTML = `
             <span class="stats-name">Built Projects</span>
           </div>
           <div class="stats-box">
-            <span class="stats-big">7.5</span>
+            <span class="stats-big">8.5</span>
             <span class="stats-name">Engineering CGPA</span>
           </div>
           <div class="stats-box">
